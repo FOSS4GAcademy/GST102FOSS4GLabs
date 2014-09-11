@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="http://www.ngdc.noaa.gov/metadata/published/xsd/ngdcSchema/schema.xsd">
+   <idinfo>
+      <datsetid>f3a8e579-94f8-45ff-a589-5e05dd35dcf3</datsetid>
+      <citation>
+         <citeinfo>
+            <origin>New Mexico Geospatial Data Acquisition Coordination Committee (GDACC), State of New Mexico</origin>
+            <pubdate>20101013</pubdate>
+            <title>Sandia Crest 7.5 Minute Quad 35106, 10M Enhanced DEM, 2005, DEM GeoTIFF</title>
+            <edition>1.0</edition>
+            <geoform>raster digital data</geoform>
+            <serinfo>
+               <sername>New Mexico Digital Terrain Model</sername>
+               <issue>November 2007</issue>
+            </serinfo>
+            <pubinfo>
+               <pubplace>Albuquerque, NM</pubplace>
+               <publish>GDACC, EDAC</publish>
+            </pubinfo>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/services/ogc/wms?SERVICE=wms&amp;REQUEST=GetCapabilities&amp;VERSION=1.1.1</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/services/ogc/wcs?SERVICE=wcs&amp;REQUEST=GetCapabilities&amp;VERSION=1.1.2</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/35106-B4__DEM.original.tif</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/35106-B4__DEM.derived.dem</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/metadata/FGDC-STD-012-2002.xml</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/metadata/FGDC-STD-012-2002.html</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/metadata/ISO-19115:2003.xml</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/metadata/ISO-19115:2003.html</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/metadata/ISO-19119:WMS.xml</onlink>
+            <onlink>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/metadata/ISO-19119:WCS.xml</onlink>
+            <lworkcit>
+               <citeinfo>
+                  <origin>New Mexico Geospatial Data Acquisition Coordination Committee</origin>
+                  <pubdate>20071130</pubdate>
+                  <title>New Mexico Digital Elevation Models &amp; Contours</title>
+                  <edition>1.0</edition>
+                  <geoform>raster &amp; vector digital data</geoform>
+                  <othercit>This project was created from the 2005/6 DOQQ project. For individual flight dates, please refer to the individual DOQQs.</othercit>
+                  <onlink>http://rgis.unm.edu/</onlink>
+               </citeinfo>
+            </lworkcit>
+         </citeinfo>
+      </citation>
+      <descript>
+         <abstract>This dataset shows one of the USGS quadrangles from the statewide digital terrain model (DTM) collection for the State of New Mexico.  Out of the entire state of approximately 2,250 quadrangles, 1,437 were prepared in fall 2007. Digital Elevation Models (DEMs), now called Digital Terrain Models (DTM) were generated using auto-correlated surfaces from digital imagery captured during the 2005 and 2006 summer flying seasons.</abstract>
+         <purpose>The contour/elevation data were part of the second phase of the NM Orthophotography project to produce new elevation data. The project focused on Digital Elevation Models (Digital Terrain Model, DTM), relief imagery, and contours. These data are primarily used for water modeling, floodplain analyses, and various environmental studies.</purpose>
+         <supplinf>This format is a hillshade (.tif).  The data are available in many formats including USGS DEM (.dem), ESRI binary floating-point (.flt), and three column text (.txt).  There are also hillshades in tagged image file format (TIFF), and contours in shapefile (SHP) format. Due to the large file size with the contour shapefiles, they will need to be ordered through RGIS. The other formats will be downloadable through RGIS (http://rgis.unm.edu/).</supplinf>
+      </descript>
+      <timeperd>
+         <timeinfo>
+            <rngdates>
+               <begdate>20050707</begdate>
+               <enddate>20060917</enddate>
+            </rngdates>
+         </timeinfo>
+         <current>ground condition</current>
+      </timeperd>
+      <status>
+         <progress>Complete</progress>
+         <update>None planned</update>
+      </status>
+      <spdom>
+         <bounding>
+            <westbc>-106.500306045</westbc>
+            <eastbc>-106.374621941</eastbc>
+            <northbc>35.2518609188</northbc>
+            <southbc>35.1233306479</southbc>
+         </bounding>
+      </spdom>
+      <keywords>
+         <theme>
+            <themekt>ISO 19115 Topic Categories</themekt>
+            <themekey>elevation</themekey>
+         </theme>
+         <place>
+            <placekt>Spatial Reference System Identifiers</placekt>
+            <placekey>EPSG:4269</placekey>
+            <placekey>EPSG:7019</placekey>
+            <placekey>EPSG:26713</placekey>
+            <placekey>EPSG:5103</placekey>
+         </place>
+         <place>
+            <placekt>Geographic Names Information System</placekt>
+            <placekey>United States</placekey>
+            <placekey>New Mexico</placekey>
+            <placekey>Sandia Crest, NM quadrangle</placekey>
+         </place>
+      </keywords>
+      <accconst>None</accconst>
+      <useconst>None. Resource Geographic Information System (RGIS) Program assumes no liability for misuse of the data. Data should be used at the scale for which they were intended. No warranty, expressed, or implied, is made by Earth Data Analysis Center (EDAC), 3001 Inc., or Bohannan-Huston, Inc. (BHI) regarding the utility of the data on any other system, nor shall the act of distribution constitute such warranty.</useconst>
+      <ptcontac>
+         <cntinfo>
+            <cntorgp>
+               <cntorg>Bohannan-Huston, Inc.</cntorg>
+               <cntper>Dennis Sandin</cntper>
+            </cntorgp>
+            <cntpos>Senior Vice President &amp; Managing Principal</cntpos>
+            <cntaddr>
+               <addrtype>mailing and physical address</addrtype>
+               <address>7500 Jefferson St NE</address>
+               <address>Courtyard I</address>
+               <city>Albuquerque</city>
+               <state>NM</state>
+               <postal>87109-4335</postal>
+               <country>USA</country>
+            </cntaddr>
+            <cntvoice>505-798-7925</cntvoice>
+            <cntfax>505-798-7932</cntfax>
+            <cntemail>dsandin@bhinc.com</cntemail>
+            <hours>8-5 M-Th 8-4:30 F (Mountain Time)</hours>
+            <cntinst>Contact Mr. Sandin and he will put the caller in touch with the appropriate technical staff.</cntinst>
+         </cntinfo>
+      </ptcontac>
+      <browse>
+         <browsen>browsefileplaceholder</browsen>
+         <browsed>browsedescplaceholder</browsed>
+         <browset>browsetypeplaceholder</browset>
+      </browse>
+      <datacred>This project was a partnership of federal and state agencies, and local governments coordinated by the New Mexico Geospatial Data Acquisition Coordination Committee.</datacred>
+      <native>Microsoft Windows 2000 Version 5.0 (Build 2195) Service Pack 4; ESRI ArcCatalog 9.2.4.1420</native>
+   </idinfo>
+   <dataqual>
+      <attracc>
+         <attraccr>TIFF's have no attributes, only a band of greyscale pixels rendering a hillshade of the terrain.</attraccr>
+         <qattracc>
+            <attraccv>N/A</attraccv>
+            <attracce>There are no attributes.</attracce>
+         </qattracc>
+      </attracc>
+      <logic>TIFF's covering USGS 7.5-minute quadrangles plus overlap were checked for erroneous values and consistency of values in overlap area between adjacent quadrangles.</logic>
+      <complete>TIFF's covering USGS 7.5-minute quadrangles plus overlap were checked for holes and edge overlap between adjacent quadrangles.</complete>
+      <posacc>
+         <horizpa>
+            <horizpar>Because the product is a rendering that produces no sharply defined edges, its accuracy was not tested.</horizpar>
+            <qhorizpa>
+               <horizpav>0.0</horizpav>
+               <horizpae>Since the accuracy was not tested, it has no value.</horizpae>
+            </qhorizpa>
+         </horizpa>
+         <vertacc>
+            <vertaccr>The product is a two dimensional rendering of the ground and has no vertical component, and therefore has no vertical accuracy.</vertaccr>
+            <qvertpa>
+               <vertaccv>0.0</vertaccv>
+               <vertacce>While the DEM from which the TIFF was rendered was tested for accuracy, the rendering itself is a derived product and has no accuracy.</vertacce>
+            </qvertpa>
+         </vertacc>
+      </posacc>
+      <lineage>
+         <srcinfo>
+            <srccite>
+               <citeinfo>
+                  <origin>Bohannon Huston, Inc. (BHI)</origin>
+                  <pubdate>2006</pubdate>
+                  <title>2005 NM Statewide Orthophotography</title>
+                  <edition>1.0</edition>
+                  <geoform>raster digital data</geoform>
+                  <pubinfo>
+                     <pubplace>Albuquerque, NM</pubplace>
+                     <publish>Bohannon Huston, Inc.</publish>
+                  </pubinfo>
+               </citeinfo>
+            </srccite>
+            <srcscale>12000</srcscale>
+            <typesrc>disc</typesrc>
+            <srctime>
+               <timeinfo>
+                  <rngdates>
+                     <begdate>20050707</begdate>
+                     <enddate>20060917</enddate>
+                  </rngdates>
+               </timeinfo>
+               <srccurr>ground condition</srccurr>
+            </srctime>
+            <srccitea>BHI</srccitea>
+            <srccontr>The 2005 NM Statewide Orthophotography project provided aerotriangulated aerial photographs from which ground elevations were autocorrelated.</srccontr>
+         </srcinfo>
+         <procstep>
+            <procdesc>MicroStation design files (.dgn) containing autocorrelated ground elevations were created from aerial photographs using Intergraph's ImageStation Automatic Elevations.</procdesc>
+            <procdate>2009</procdate>
+            <proccont>
+               <cntinfo>
+                  <cntorgp>
+                     <cntorg>Bohannan-Huston, Inc.</cntorg>
+                     <cntper>Dennis Sandin</cntper>
+                  </cntorgp>
+                  <cntpos>Senior Vice President &amp; Managing Principal</cntpos>
+                  <cntaddr>
+                     <addrtype>mailing and physical address</addrtype>
+                     <address>7500 Jefferson St NE</address>
+                     <address>Courtyard I</address>
+                     <city>Albuquerque</city>
+                     <state>NM</state>
+                     <postal>87109-4335</postal>
+                     <country>USA</country>
+                  </cntaddr>
+                  <cntvoice>505-798-7925</cntvoice>
+                  <cntfax>505-798-7932</cntfax>
+                  <cntemail>dsandin@bhinc.com</cntemail>
+                  <hours>8-5 M-Th 8-4:30 F (Mountain Time)</hours>
+                  <cntinst>Contact Mr. Sandin and he will put the caller in touch with the appropriate technical staff.</cntinst>
+               </cntinfo>
+            </proccont>
+         </procstep>
+         <procstep>
+            <procdesc>MicroStation design files containing ground elevations were clipped to eliminate overlap between stereomodels and combined into output quad sized tiles in LiDAR binary format (.las) format.</procdesc>
+            <procdate>2009</procdate>
+            <proccont>
+               <cntinfo>
+                  <cntorgp>
+                     <cntorg>Bohannan-Huston, Inc.</cntorg>
+                     <cntper>Dennis Sandin</cntper>
+                  </cntorgp>
+                  <cntpos>Senior Vice President &amp; Managing Principal</cntpos>
+                  <cntaddr>
+                     <addrtype>mailing and physical address</addrtype>
+                     <address>7500 Jefferson St NE</address>
+                     <address>Courtyard I</address>
+                     <city>Albuquerque</city>
+                     <state>NM</state>
+                     <postal>87109-4335</postal>
+                     <country>USA</country>
+                  </cntaddr>
+                  <cntvoice>505-798-7925</cntvoice>
+                  <cntfax>505-798-7932</cntfax>
+                  <cntemail>dsandin@bhinc.com</cntemail>
+                  <hours>8-5 M-Th 8-4:30 F (Mountain Time)</hours>
+                  <cntinst>Contact Mr. Sandin and he will put the caller in touch with the appropriate technical staff.</cntinst>
+               </cntinfo>
+            </proccont>
+         </procstep>
+         <procstep>
+            <procdesc>Las files containing the points for each model were processed both manually and via filters to declassify points coincident with structures, vegetation, water, and other features that did not constitute the surface of the ground within TerraScan.  The output was saved into a new LiDAR binary format (.las).</procdesc>
+            <procdate>2009</procdate>
+            <proccont>
+               <cntinfo>
+                  <cntorgp>
+                     <cntorg>Bohannan-Huston, Inc.</cntorg>
+                     <cntper>Dennis Sandin</cntper>
+                  </cntorgp>
+                  <cntpos>Senior Vice President &amp; Managing Principal</cntpos>
+                  <cntaddr>
+                     <addrtype>mailing and physical address</addrtype>
+                     <address>7500 Jefferson St NE</address>
+                     <address>Courtyard I</address>
+                     <city>Albuquerque</city>
+                     <state>NM</state>
+                     <postal>87109-4335</postal>
+                     <country>USA</country>
+                  </cntaddr>
+                  <cntvoice>505-798-7925</cntvoice>
+                  <cntfax>505-798-7932</cntfax>
+                  <cntemail>dsandin@bhinc.com</cntemail>
+                  <hours>8-5 M-Th 8-4:30 F (Mountain Time)</hours>
+                  <cntinst>Contact Mr. Sandin and he will put the caller in touch with the appropriate technical staff.</cntinst>
+               </cntinfo>
+            </proccont>
+         </procstep>
+         <procstep>
+            <procdesc>LiDAR binary format files were converted to ASCII grid files using InRoads SDK.</procdesc>
+            <procdate>2009</procdate>
+            <proccont>
+               <cntinfo>
+                  <cntorgp>
+                     <cntorg>Bohannan-Huston, Inc.</cntorg>
+                     <cntper>Dennis Sandin</cntper>
+                  </cntorgp>
+                  <cntpos>Senior Vice President &amp; Managing Principal</cntpos>
+                  <cntaddr>
+                     <addrtype>mailing and physical address</addrtype>
+                     <address>7500 Jefferson St NE</address>
+                     <address>Courtyard I</address>
+                     <city>Albuquerque</city>
+                     <state>NM</state>
+                     <postal>87109-4335</postal>
+                     <country>USA</country>
+                  </cntaddr>
+                  <cntvoice>505-798-7925</cntvoice>
+                  <cntfax>505-798-7932</cntfax>
+                  <cntemail>dsandin@bhinc.com</cntemail>
+                  <hours>8-5 M-Th 8-4:30 F (Mountain Time)</hours>
+                  <cntinst>Contact Mr. Sandin and he will put the caller in touch with the appropriate technical staff.</cntinst>
+               </cntinfo>
+            </proccont>
+         </procstep>
+         <procstep>
+            <procdesc>The ESRI ASCII grid format files were converted to hill shade tif format files using the Hillshade program (http://www.perrygeo.net/) and GDAL.</procdesc>
+            <procdate>2009</procdate>
+            <proccont>
+               <cntinfo>
+                  <cntorgp>
+                     <cntorg>Bohannan-Huston, Inc.</cntorg>
+                     <cntper>Dennis Sandin</cntper>
+                  </cntorgp>
+                  <cntpos>Senior Vice President &amp; Managing Principal</cntpos>
+                  <cntaddr>
+                     <addrtype>mailing and physical address</addrtype>
+                     <address>7500 Jefferson St NE</address>
+                     <address>Courtyard I</address>
+                     <city>Albuquerque</city>
+                     <state>NM</state>
+                     <postal>87109-4335</postal>
+                     <country>USA</country>
+                  </cntaddr>
+                  <cntvoice>505-798-7925</cntvoice>
+                  <cntfax>505-798-7932</cntfax>
+                  <cntemail>dsandin@bhinc.com</cntemail>
+                  <hours>8-5 M-Th 8-4:30 F (Mountain Time)</hours>
+                  <cntinst>Contact Mr. Sandin and he will put the caller in touch with the appropriate technical staff.</cntinst>
+               </cntinfo>
+            </proccont>
+         </procstep>
+      </lineage>
+   </dataqual>
+   <spdoinfo>
+      <indspref>Bernalillo County (35001)</indspref>
+      <direct>Raster</direct>
+      <rastinfo>
+         <cvaltype>unsigned eight-bit integer</cvaltype>
+         <rasttype>Pixel</rasttype>
+         <rowcount>1229</rowcount>
+         <colcount>1428</colcount>
+         <vrtcount>1</vrtcount>
+      </rastinfo>
+   </spdoinfo>
+   <spref>
+      <horizsys>
+         <planar>
+            <gridsys>
+                <gridsysn>Universal Transverse Mercator</gridsysn>
+                <utm>
+                    <utmzone>13</utmzone>
+                    <transmer>
+                        <sfctrmer>0.999600</sfctrmer>
+                        <longcm>-105.000000</longcm>
+                        <latprjo>0.000000</latprjo>
+                        <feast>500000.000000</feast>
+                        <fnorth>0.000000</fnorth>
+                    </transmer>
+                </utm>
+            </gridsys>
+            <planci>
+               <plance>row and column</plance>
+               <coordrep>
+                  <absres>1</absres>
+                  <ordres>1</ordres>
+               </coordrep>
+               <plandu>meters</plandu>
+            </planci>
+         </planar>
+         <geodetic>
+                <horizdn>North American Datum of 1927</horizdn>
+                <ellips>Clarke 1866</ellips>
+                <semiaxis>6378206.400000</semiaxis>
+                <denflat>294.978698</denflat>
+            </geodetic>
+      </horizsys>
+   </spref>
+   <eainfo>
+      <detailed>
+         <enttyp>
+            <enttypl>
+31107-h1</enttypl>
+            <enttypd>filename</enttypd>
+            <enttypds>3001</enttypds>
+         </enttyp>
+      </detailed>
+      <overview>
+         <eaover>The hillshade is a grayscale image which shows a rendering of the terrain beneath it by showing the shadows that would result during the daytime.</eaover>
+         <eadetcit>TIFF 6.0 Specification Coverage: http://www.remotesensing.org/libtiff/support.html</eadetcit>
+      </overview>
+   </eainfo>
+   <distinfo>
+      <distrib>
+         <cntinfo>
+            <cntorgp>
+               <cntorg>Earth Data Analysis Center</cntorg>
+            </cntorgp>
+            <cntpos>Clearinghouse Manager</cntpos>
+            <cntaddr>
+               <addrtype>mailing and physical address</addrtype>
+               <address>MSC01 1110</address>
+               <address>1 University of New Mexico</address>
+               <city>Albuquerque</city>
+               <state>NM</state>
+               <postal>87131-0001</postal>
+               <country>USA</country>
+            </cntaddr>
+            <cntvoice>505-277-3622 ext. 230</cntvoice>
+            <cntfax>505-277-3614</cntfax>
+            <cntemail>clearinghouse@edac.unm.edu</cntemail>
+            <hours>0800 - 1700 MT, M-F -7 hours GMT</hours>
+         </cntinfo>
+      </distrib>
+      <resdesc>Downloadable Data</resdesc>
+      <distliab>The material on this site is made available as a public service. Maps and data are to be used for reference purposes only and the Earth Data Analysis Center (EDAC), Resource Geographic Information System (RGIS) and The University of New Mexico are not responsible for any inaccuracies herein contained. No responsibility is assumed for damages or other liabilities due to the accuracy, availability, use or misuse of the information herein provided. Unless otherwise indicated in the documentation (metadata) for individual data sets, information on this site is public domain and may be copied without permission; citation of the source is appreciated.</distliab>
+      <stdorder>
+         <digform>
+            <digtinfo>
+               <formname>Tagged Image File Format (TIFF)</formname>
+               <transize>7</transize>
+            </digtinfo>
+            <digtopt>
+               <onlinopt>
+                  <computer>
+                     <networka>
+                        <networkr>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/35106-B4__DEM.original.tif</networkr>
+                     </networka>
+                  </computer>
+                  <accinstr>Download from Resource Geographic Information System (RGIS) at http://rgis.unm.edu.</accinstr>
+               </onlinopt>
+            </digtopt>
+         </digform>
+         <fees>None. The files are available to download from Resource Geographic Information System (RGIS) (http://rgis.unm.edu).</fees>
+         <ordering>Contact Earth Data Analysis Center at clearinghouse@edac.unm.edu</ordering>
+      </stdorder>
+      <stdorder>
+         <digform>
+            <digtinfo>
+               <formname>USGS ASCII DEM (dem)</formname>
+               <transize>11</transize>
+            </digtinfo>
+            <digtopt>
+               <onlinopt>
+                  <computer>
+                     <networka>
+                        <networkr>http://gstore.unm.edu/apps/rgis/datasets/f3a8e579-94f8-45ff-a589-5e05dd35dcf3/35106-B4__DEM.derived.dem</networkr>
+                     </networka>
+                  </computer>
+                  <accinstr>Download from Resource Geographic Information System (RGIS) at http://rgis.unm.edu.</accinstr>
+               </onlinopt>
+            </digtopt>
+         </digform>
+         <fees>None. The files are available to download from Resource Geographic Information System (RGIS) (http://rgis.unm.edu).</fees>
+         <ordering>Contact Earth Data Analysis Center at clearinghouse@edac.unm.edu</ordering>
+      </stdorder>
+      <custom>Contact Earth Data Analysis Center at clearinghouse@edac.unm.edu</custom>
+      <techpreq>Adequate computer capability is the only technical prerequisite for viewing data in digital form.</techpreq>
+   </distinfo>
+   <metainfo>
+      <metd>20140708</metd>
+      <metc>
+         <cntinfo>
+            <cntorgp>
+               <cntorg>Earth Data Analysis Center</cntorg>
+            </cntorgp>
+            <cntpos>Clearinghouse Manager</cntpos>
+            <cntaddr>
+               <addrtype>mailing and physical address</addrtype>
+               <address>MSC01 1110</address>
+               <address>1 University of New Mexico</address>
+               <city>Albuquerque</city>
+               <state>NM</state>
+               <postal>87131-0001</postal>
+               <country>USA</country>
+            </cntaddr>
+            <cntvoice>505-277-3622 ext. 230</cntvoice>
+            <cntfax>505-277-3614</cntfax>
+            <cntemail>clearinghouse@edac.unm.edu</cntemail>
+            <hours>0800 - 1700 MT, M-F -7 hours GMT</hours>
+         </cntinfo>
+      </metc>
+      <metstdn>FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+      <metstdv>FGDC-STD-001-1998</metstdv>
+      <mettc>local time</mettc>
+      <metextns>
+         <onlink>http://www.fgdc.gov/standards/projects/FGDC-standards-projects/csdgm_rs_ex/MetadataRemoteSensingExtens.pdf</onlink>
+         <metprof>Extensions for Remote Sensing Metadata, FGDC-STD-012-2002</metprof>
+      </metextns>
+   </metainfo>
+</metadata>

@@ -1,0 +1,999 @@
+Identification_Information:
+  Citation:
+    Citation_Information:
+      Originator: U.S. Census Bureau
+      Publication_Date: 201009
+      Title: U.S. Census Database, 2000
+      Publication_Information:
+        Publication_Place: Reston, VA
+        Publisher: U.S. Geological Survey
+      Online_Linkage: <http://nationalatlas.gov/atlasftp.html>
+
+  Description:
+    Abstract: 
+      This data set includes U.S. Census Bureau population information for the
+      United States and Puerto Rico, presented by county.  These data are from 
+      the 2000 Census and include total population counts, population density 
+      values, gender and age statistics, various statistics on race and ethnicity 
+      distributions, urban and rural statistics, and population change between 
+      1990 and 2000.  This is a revised version of the July, 2004, data set, 
+      with additional data fields included.
+    Purpose: 
+      These data are intended for geographic display and analysis at the
+      national level, and for large regional areas.  The data should be
+      displayed and analyzed at scales appropriate for 1:2,000,000-scale data.
+      No responsibility is assumed by the U.S. Geological Survey in the use of
+      these data.
+    Supplemental_Information:
+      To create maps that are similar to the maps in the National Atlas 
+      <http://nationalatlas.gov/natlas/natlasstart.asp>, ce2000t.dbf can be
+      joined to the 2000 county boundaries available from the National
+      Atlas download page, <http://nationalatlas.gov/atlasftp.html>. 
+ 
+      For additional information on U.S. Census Bureau definitions and
+      statistics, see the U.S. Census Bureau web page at: 
+      <http://www.census.gov/>.
+
+  Time_Period_of_Content:
+    Time_Period_Information:
+      Range_of_Dates/Times:
+        Beginning_Date: 20000401
+        Ending_Date: 20030612
+    Currentness_Reference: Ground condition
+
+  Status:
+    Progress: Complete
+    Maintenance_and_Update_Frequency: None planned
+
+  Spatial_Domain:
+    Bounding_Coordinates:
+      West_Bounding_Coordinate: 172
+      East_Bounding_Coordinate: -66
+      North_Bounding_Coordinate: 72
+      South_Bounding_Coordinate: 18
+
+  Keywords:
+    Theme:
+      Theme_Keyword_Thesaurus: None
+      Theme_Keyword: Census
+      Theme_Keyword: population
+      Theme_Keyword: White
+      Theme_Keyword: Black
+      Theme_Keyword: African American
+      Theme_Keyword: American Indian
+      Theme_Keyword: Alaska Native
+      Theme_Keyword: Asian
+      Theme_Keyword: Native Hawaiian
+      Theme_Keyword: Pacific Islander
+      Theme_Keyword: Hispanic
+      Theme_Keyword: Hispanic Origin
+      Theme_Keyword: Latino
+      Theme_Keyword: Latino Origin
+      Theme_Keyword: Population Density
+      Theme_Keyword: Under Age 18
+      Theme_Keyword: Female
+      Theme_Keyword: Male
+      Theme_Keyword: Age Over 65
+      Theme_Keyword: Median Age
+      Theme_Keyword: Age
+      Theme_Keyword: Population Change
+      Theme_Keyword: Urban 
+      Theme_Keyword: Rural
+
+    Place:
+      Place_Keyword_Thesaurus: 
+        U.S. Department of Commerce, 1995, Countries, Dependencies, Areas of
+        Special Sovereignty, and Their Principal Administrative Divisions
+        (Federal Information Processing Standard 10-4): Washington, DC, 
+        National Institute of Standards and Technology.
+      Place_Keyword: United States
+      Place_Keyword: USA
+    Place:
+      Place_Keyword_Thesaurus:
+        U.S. Department of Commerce, 1987, Codes for the Identification of the
+        States, the District of Columbia and the Outlying Areas of The United 
+        States, and Associated Areas (Federal Information Processing Standard 
+        5-2):  Washington, DC, National Institute of Standards and Technology.
+      Place_Keyword: Alabama
+      Place_Keyword: Alaska
+      Place_Keyword: Arizona
+      Place_Keyword: Arkansas
+      Place_Keyword: California
+      Place_Keyword: Colorado
+      Place_Keyword: Connecticut
+      Place_Keyword: Delaware
+      Place_Keyword: District of Columbia
+      Place_Keyword: Florida
+      Place_Keyword: Georgia
+      Place_Keyword: Hawaii
+      Place_Keyword: Idaho
+      Place_Keyword: Illinois
+      Place_Keyword: Indiana
+      Place_Keyword: Iowa
+      Place_Keyword: Kansas
+      Place_Keyword: Kentucky
+      Place_Keyword: Louisiana
+      Place_Keyword: Maine
+      Place_Keyword: Maryland
+      Place_Keyword: Massachusetts
+      Place_Keyword: Michigan
+      Place_Keyword: Minnesota
+      Place_Keyword: Mississippi
+      Place_Keyword: Missouri
+      Place_Keyword: Montana
+      Place_Keyword: Nebraska
+      Place_Keyword: Nevada
+      Place_Keyword: New Hampshire
+      Place_Keyword: New Jersey
+      Place_Keyword: New Mexico
+      Place_Keyword: New York
+      Place_Keyword: North Carolina
+      Place_Keyword: North Dakota
+      Place_Keyword: Ohio
+      Place_Keyword: Oklahoma
+      Place_Keyword: Oregon
+      Place_Keyword: Pennsylvania
+      Place_Keyword: Rhode Island
+      Place_Keyword: South Carolina
+      Place_Keyword: South Dakota
+      Place_Keyword: Tennessee
+      Place_Keyword: Texas
+      Place_Keyword: Utah
+      Place_Keyword: Vermont 
+      Place_Keyword: Virginia
+      Place_Keyword: Washington
+      Place_Keyword: West Virginia
+      Place_Keyword: Wisconsin
+      Place_Keyword: Wyoming
+      Place_Keyword: Puerto Rico
+
+  Access_Constraints: None
+  Use_Constraints: 
+    None.  Acknowledgment of the National Atlas of the United States of America, 
+    the U.S. Geological Survey, and (or) the U.S. Census Bureau would be 
+    appreciated in products derived from these data.
+
+  Point_of_Contact: 
+    Contact_Information: 
+      Contact_Person_Primary: 
+        Contact_Person: Gita Urban-Mathieux 
+        Contact_Organization: U.S. Geological Survey 
+      Contact_Address: 
+        Address_Type: Mailing address 
+        Address: 561 National Center 
+        City: Reston 
+        State_or_Province: VA 
+        Postal_Code: 20192 
+      Contact_Voice_Telephone: 703-648-5175 
+      Contact_Electronic_Mail_Address: atlasmail@usgs.gov
+
+Data_Quality_Information:
+  Logical_Consistency_Report: 
+    No additional checks for topological consistency were performed on this
+    data set.
+  Completeness_Report: 
+    This data set includes population statistics for all 50 of the United 
+    States, the District of Columbia, and Puerto Rico.
+  Lineage:
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Population Density, 2000
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_1
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Number of People, 2000
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_2
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Percent Under Age 18, 2000
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_3
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Percent of Population, 2000, One Race: White
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_4
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: 
+            Percent of Population, 2000, One Race: Black or African American
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_5
+      Source_Contribution: Attribute information
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: 
+            Percent of Population, 2000, One Race: American Indian and
+            Alaska Native
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_6
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Percent of Population, 2000, One Race: Asian
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_7
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: 
+            Percent of Population, 2000, One Race: Native Hawaiian and
+            Other Pacific Islander
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_8
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Percent of Population, 2000, Two or More  Races Including White
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_9
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title:
+            Percent of Population, 2000, Two or More  Races Including Black
+            or African American
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_10
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title:
+            Percent of Population, 2000, Two or More  Races Including American
+            Indian and Alaska Native
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_11
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Percent of Population, 2000, Two or More  Races Including Asian
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_12
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title:
+            Percent of Population, 2000, Two or More  Races Including Native
+            Hawaiian and Other Pacific Islander
+          Publication_Information:
+            Publication_Place: Washington, DC 
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_13
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: 
+            Percent of Population, 2000, Hispanic or Latino Origin, All Races
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_14
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Male and Female Population, 2000
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_15
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 2000
+          Title: Square miles per County, 2000
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Ground condition
+      Source_Citation_Abbreviation: CEN2000_16
+      Source_Contribution: Attribute information
+
+    Source_Information:  
+      Source_Citation:  
+        Citation_Information:  
+          Originator: U.S. Geological Survey  
+          Publication_Date: 200208
+          Title: U.S. Census Database, 2000
+          Publication_Information: 
+            Publication_Place: Reston, VA
+            Publisher: U.S. Geological Survey 
+      Type_of_Source_Media: Online 
+      Source_Time_Period_of_Content: 
+        Time_Period_Information: 
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Publication date 
+      Source_Citation_Abbreviation: ATLAS-CE2000
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Bureau of the Census
+          Publication_Date: 20030612
+          Title: County and City Data Book: 2000
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Bureau of the Census
+      Type_of_Source_Media: CD-ROM
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20030612
+        Source_Currentness_Reference: Publication date
+      Source_Citation_Abbreviation: DATABOOK
+      Source_Contribution: Attribute information
+
+    Source_Information:
+      Source_Citation:
+        Citation_Information:
+          Originator: U.S. Census Bureau
+          Publication_Date: 20000401
+          Title: Census 2000 Summary File - Urban and Rural
+          Publication_Information:
+            Publication_Place: Washington, DC
+            Publisher: U.S. Census Bureau
+          Online_Linkage: http://factfinder.census.gov/servlet/DatasetMainPageServlet?_lang=en&_ts=303315892843&_ds_name=DEC_2000_SF1_U&_program=DEC
+      Type_of_Source_Media: Online
+      Source_Time_Period_of_Content:
+        Time_Period_Information:
+          Single_Date/Time:
+            Calendar_Date: 20000401
+        Source_Currentness_Reference: Publication date
+      Source_Citation_Abbreviation: CEN2000U_R
+      Source_Contribution: Attribute information
+
+
+    Process_Step:
+      Process_Description: 
+        All the census data sets were loaded into ArcView and joined into a 
+        single database file using the FIPS-code field.  Fields for county name, 
+        State name abbreviation, State FIPS, and ratio of males to females were 
+        added.  The final database was called ce2000t.dbf.
+      Source_Used_Citation_Abbreviation: CEN2000_1
+      Source_Used_Citation_Abbreviation: CEN2000_2
+      Source_Used_Citation_Abbreviation: CEN2000_3
+      Source_Used_Citation_Abbreviation: CEN2000_4
+      Source_Used_Citation_Abbreviation: CEN2000_5
+      Source_Used_Citation_Abbreviation: CEN2000_6
+      Source_Used_Citation_Abbreviation: CEN2000_7
+      Source_Used_Citation_Abbreviation: CEN2000_8
+      Source_Used_Citation_Abbreviation: CEN2000_9
+      Source_Used_Citation_Abbreviation: CEN2000_10
+      Source_Used_Citation_Abbreviation: CEN2000_11
+      Source_Used_Citation_Abbreviation: CEN2000_12
+      Source_Used_Citation_Abbreviation: CEN2000_13
+      Source_Used_Citation_Abbreviation: CEN2000_14
+      Source_Used_Citation_Abbreviation: CEN2000_15
+      Source_Used_Citation_Abbreviation: CEN2000_16
+      Process_Date: 200204
+      Source_Produced_Citation_Abbreviation: ATLAS-CE2000
+
+    Process_Step:
+      Process_Description: 
+        Fields containing data for population change between 1990 and 2000, 
+        median age in 2000, and age over 65 for 2000 were extracted from 
+        DATABOOK.  The percent of the population over 65 was computed.  The 
+        resulting database containing the three new fields of data was appended 
+        to ATLAS_CE2000.
+      Source_Used_Citation_Abbreviation: DATABOOK
+      Source_Used_Citation_Abbreviation: ATLAS-CE2000
+      Process_Date: 200406
+
+    Process_Step:
+      Process_Description: 
+        Fields containing data for urban and rural statistics were downloaded 
+        from U.S. Census Bureau website. The data were added to ATLAS_CE2000.
+      Source_Used_Citation_Abbreviation: CEN2000U_R
+      Source_Used_Citation_Abbreviation: ATLAS-CE2000
+      Process_Date: 201009
+
+
+Spatial_Data_Organization_Information:
+  Indirect_Spatial_Reference: 
+    Countries, Dependencies, Areas of Special Sovereignty, and Their Principal 
+    Administrative Divisions (Federal Information Processing Standard (FIPS) 
+    10-4): Washington, DC, National Institute of Standards and Technology.
+
+    U.S. Department of Commerce, 1987, Codes for the Identification of the 
+    States, the District of Columbia and the Outlying Areas of The United 
+    States, and Associated Areas (Federal Information Processing Standard 5-2):  
+    Washington, DC, National Institute of Standards and Technology. 
+
+    U.S. Department of Commerce,1990, Counties and Equivalent Entities of the 
+    United States, Its Possessions, and Associated Areas (Federal Information 
+    Processing Standard 6-4): Washington, DC, National Institute of Standards 
+    and Technology. 
+
+Entity_and_Attribute_Information:
+  Detailed_Description:
+    Entity_Type:
+      Entity_Type_Label: 
+        U.S. Population Statistics for 2000 (described by ce2000t.dbf)
+      Entity_Type_Definition: 
+        Table of selected Census 2000 population data for counties and 
+        equivalent entities of the United States and Puerto Rico.
+      Entity_Type_Definition_Source: U.S. Census Bureau
+
+    Attribute:
+      Attribute_Label: FIPS
+      Attribute_Definition: 
+        The 5-digit FIPS code identifying the State and county and equivalent 
+        entities.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: 
+            Counties and Equivalent Entities of the United States, Its 
+            Possessions, and Associated Areas (Federal Information Processing 
+            Standard (FIPS) 6-4): Washington, DC, National Institute of 
+            Standards and Technology.
+          Codeset_Source: U.S. Department of Commerce
+
+    Attribute:
+      Attribute_Label: County
+      Attribute_Definition: The name of the county or county equivalent.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: 
+            Counties and Equivalent Entities of the United States, Its 
+            Possessions, and Associated Areas; (Federal Information Processing 
+            Standard (FIPS) 6-4): Washington, DC, National Institute of 
+            Standards and Technology.
+          Codeset_Source: U.S. Department of Commerce 
+
+    Attribute:
+      Attribute_Label: State_fips
+      Attribute_Definition: 
+        The 2-digit FIPS code of the State or State equivalent.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Codeset_Domain:
+          Codeset_Name: 
+            Codes for the Identification of the States, the District of Columbia 
+            and the Outlying Areas of the United States, and Associated Areas;
+            (Federal Information Processing  Standard (FIPS) 5-2): Washington, 
+            DC, National Institute of Standards and Technology.
+          Codeset_Source: U.S. Department of Commerce 
+
+    Attribute: 
+      Attribute_Label: State 
+      Attribute_Definition: 
+        The two-character FIPS code for the State or State equivalent. 
+      Attribute_Definition_Source: U.S. Geological Survey 
+      Attribute_Domain_Values: 
+        Codeset_Domain: 
+          Codeset_Name: 
+            Codes for the Identification of the States, the District of Columbia 
+            and the Outlying Areas of the United States, and Associated Areas;
+            (Federal Information Processing  Standard (FIPS) 5-2): Washington, 
+            DC, National Institute of Standards and Technology.
+          Codeset_Source: U.S. Department of Commerce 
+
+    Attribute:
+      Attribute_Label: Square_mil
+      Attribute_Definition: 
+        The size of the county or county equivalent in square miles.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 1.986
+          Range_Domain_Maximum: 145899.680
+
+    Attribute:
+      Attribute_Label: Pop2000
+      Attribute_Definition:
+        The number of people in the county or county equivalent in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 67
+          Range_Domain_Maximum: 9519338
+
+    Attribute:
+      Attribute_Label: Pop00sqmil
+      Attribute_Definition: The number of people per square mile in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 66934.3
+
+    Attribute:
+      Attribute_Label: Male2000
+      Attribute_Definition: 
+        The number of males in the county or county equivalent in 2000.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 36
+          Range_Domain_Maximum: 4704105
+    Attribute:
+      Attribute_Label: Female2000
+      Attribute_Definition: 
+        The number of females in the county or county equivalent.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 31
+          Range_Domain_Maximum: 4815233
+    Attribute:
+      Attribute_Label: Mal2fem
+      Attribute_Definition: The number of males per 100 females in 2000.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 74
+          Range_Domain_Maximum: 205
+
+    Attribute:
+      Attribute_Label: Under18
+      Attribute_Definition:
+        The percent of people in the county or county equivalent, under the
+        age of 18 in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 2.0
+          Range_Domain_Maximum: 46.6
+
+    Attribute:
+      Attribute_Label: Aian
+      Attribute_Definition:
+        The percent of people in the county or county equivalent indicating
+        One Race: American Indian and Alaska Native in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 94.2
+
+    Attribute:
+      Attribute_Label: Asia
+      Attribute_Definition: 
+        The percent of people in the county or county equivalent indicating
+        One Race: Asian in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 46.0
+
+    Attribute:
+      Attribute_Label: Black
+      Attribute_Definition: 
+        The percent of people in the county or county equivalent indicating
+        One Race: Black or African American in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 86.5
+
+    Attribute:
+      Attribute_Label: Nhpi
+      Attribute_Definition:
+        The percent of people in the county or county equivalent indicating
+        One Race: Native Hawaiian and Other Pacific Islander in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 48.3
+
+    Attribute:
+      Attribute_Label: White
+      Attribute_Definition: 
+        The percent of people in the county or county equivalent indicating
+        One Race: White in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 4.5
+          Range_Domain_Maximum: 99.7
+
+    Attribute:
+      Attribute_Label: Aian_more
+      Attribute_Definition:
+        The percent of people in the county or county equivalent indicating
+        Two or More  Races including American Indian and Alaska Native in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau 
+
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 95.1
+
+    Attribute:
+      Attribute_Label: Asia_more
+      Attribute_Definition: 
+        The percent of people in the county or county equivalent indicating
+        Two or More Races including Asian in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 61.6
+
+    Attribute:
+      Attribute_Label: Black_more
+      Attribute_Definition:
+        The percent of people in the county or county equivalent indicating
+        Two or More  Races including Black or African American in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 86.7
+
+    Attribute:
+      Attribute_Label: Nhpi_more
+      Attribute_Definition:
+        The percent of people in the county or county equivalent indicating
+        Two or More  Races including Native Hawaiian and Other Pacific Islander
+        in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 50.3
+
+    Attribute:
+      Attribute_Label: White_more
+      Attribute_Definition: 
+        The percent of people in the county or county equivalent indicating
+        Two or More  Races including White in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 5.2
+          Range_Domain_Maximum: 99.9
+
+    Attribute:
+      Attribute_Label: Hisp_lat
+      Attribute_Definition: 
+        The percent of people in the county or county equivalent indicating 
+        Hispanic or Latino Origin, All Races in 2000.
+      Attribute_Definition_Source: U.S. Census Bureau
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.1
+          Range_Domain_Maximum: 99.7
+
+    Attribute:
+      Attribute_Label: Ch19902000
+      Attribute_Definition: 
+        The population change between 1990 and 2000, as a percentage of the 1990 
+        population.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Enumerated_Domain: 
+          Enumerated_Domain_Value: -9999
+          Enumerated_Domain_Value_Definition: Data not available.
+          Enumerated_Domain_Value_Definition_Source: U.S. Geological Survey 
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: -42.3
+          Range_Domain_Maximum: 191.0
+
+    Attribute:
+      Attribute_Label: Medage2000
+      Attribute_Definition: Median age of the population in 2000.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 20.0
+          Range_Domain_Maximum: 58.6
+
+    Attribute:
+      Attribute_Label: Perover65
+      Attribute_Definition: 
+        The percent of people in the county or county equivalent, over the
+        age of 65 in 2000. 
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 1.8
+          Range_Domain_Maximum: 34.7
+
+    Attribute:
+      Attribute_Label: Urban00
+      Attribute_Definition: 
+        Total population of places designated as urban in 2000. Urban 
+        consists of all territory, population, and housing units in 
+        urbanized areas and in places of 2,500 or more persons outside 
+        urbanized areas. 
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 9451033.0
+
+    Attribute:
+      Attribute_Label: Rural00
+      Attribute_Definition:
+        Total population of places designated as rural in 1980.  Rural consists
+        of territory, population, and housing units not classified as urban.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.0
+          Range_Domain_Maximum: 144261
+
+    Attribute:
+      Attribute_Label: PCT_URB_00
+      Attribute_Definition:
+        Percent of population in the county or county equivalent in places
+        designated as urban in 2000. Urban consists of all territory, population,
+        and housing units in urbanized areas and in places of 2,500 or more persons
+        outside urbanized areas.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.000
+          Range_Domain_Maximum: 100.000
+
+    Attribute:
+      Attribute_Label: PCT_RUR_00
+      Attribute_Definition:
+        Percent of population in the county or county equivalent in places
+        designated as rural in 2000.  Rural consists of territory, population,
+        and housing units not classified as urban.
+      Attribute_Definition_Source: U.S. Geological Survey
+      Attribute_Domain_Values:
+        Range_Domain:
+          Range_Domain_Minimum: 0.000
+          Range_Domain_Maximum: 100.000
+
+Distribution_Information: 
+  Distributor: 
+    Contact_Information: 
+      Contact_Organization_Primary: 
+        Contact_Organization: 
+          Earth Science Information Center, U.S. Geological Survey 
+      Contact_Address: 
+        Address_Type: Mailing address 
+        Address: 507 National Center 
+        City: Reston 
+        State_or_Province: VA 
+        Postal_Code: 20192 
+      Contact_Voice_Telephone: 1-888-ASK-USGS (1-888-275-8747) 
+      Contact_Voice_Telephone: 703-648-5920
+      Contact_Instructions: 
+        In addition to the address above there are other ESIC offices throughout 
+        the country.  A full list of these offices is at 
+        <http://geography.usgs.gov/esic/esic_index.html>.
+
+  Distribution_Liability: 
+    Although these data have been processed successfully on a computer system at 
+    the U.S. Geological Survey, no warranty expressed or implied is made by the 
+    U.S. Geological Survey regarding the utility of the data on any other 
+    system, nor shall the act of distribution constitute any such warranty.  No 
+    responsibility is assumed by the U.S. Geological Survey in the use of these 
+    data.
+
+  Standard_Order_Process: 
+    Digital_Form: 
+      Digital_Transfer_Information: 
+        Format_Name: dBASE IV file 
+      Digital_Transfer_Option: 
+        Online_Option: 
+          Computer_Contact_Information: 
+            Network_Address: 
+              Network_Resource_Name:  
+                <http://nationalatlas.gov/atlasftp.html>
+    Fees: There is no charge for the map layer.
+
+Metadata_Reference_Information:  
+  Metadata_Date: 20100924
+  Metadata_Contact:  
+    Contact_Information:  
+      Contact_Person_Primary:  
+        Contact_Person: Terry Higgins	
+        Contact_Organization: National Atlas of the United States
+      Contact_Address:
+        Address_Type: Mailing and physical address
+        Address: 1400 Independence Road
+        Address: MS 760
+        City: Rolla
+        State_or_Province: MO
+        Postal_Code: 65401
+        Country: USA
+      Contact_Voice_Telephone: 573-308-3592
+      Contact_Electronic_Mail_Address: atlasmail@usgs.gov
+  Metadata_Standard_Name:  
+    FGDC Content Standards for Digital Geospatial Metadata  
+  Metadata_Standard_Version: FGDC-STD-001-1998  
+  Metadata_Security_Information:  
+    Metadata_Security_Classification_System: None  
+    Metadata_Security_Classification: Unclassified  
+    Metadata_Security_Handling_Description: None 

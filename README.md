@@ -6,31 +6,16 @@ This curriculum currently contains labs written to use FOSS4G software such as Q
 
 ### Lab Topics
 
-+ [ ] Lab 1 - Reviewing the Basics of Geospatial Data
-+ [ ] Lab 2 - Introduction to Geospatial Analysis
-+ [ ] Lab 3 - Advanced Attributes and Spatial Queries for Data Exploration
-+ [ ] Lab 4 - Vector Data Analysis - Overlay Techniques
-+ [ ] Lab 5 - Vector Data Analysis - Creating a Site Selection Model
-+ [ ] Lab 6 - Vector Data Analysis - Network Analysis
-+ [ ] Lab 7 - Raster Data Analysis - Working with Topographic Data
-+ [ ] Lab 8 - Raster Data Analysis - Density Surfaces
++ [x] Lab 1 - Reviewing the Basics of Geospatial Data
++ [x] Lab 2 - Introduction to Geospatial Analysis
++ [x] Lab 3 - Advanced Attributes and Spatial Queries for Data Exploration
++ [x] Lab 4 - Vector Data Analysis - Overlay Techniques
++ [x] Lab 5 - Vector Data Analysis - Creating a Site Selection Model
++ [x] Lab 6 - Vector Data Analysis - Network Analysis
++ [x] Lab 7 - Raster Data Analysis - Working with Topographic Data
++ [x] Lab 8 - Raster Data Analysis - Density Surfaces
 
 *Labs with a checkmark are completely converted to Markdown*
-
-### To-Be-Converted Lab Contents
-
-*We would love your help!*  Converting each module from MS Word to Markdown takes time, and, 
-the more that help us convert, the faster we can start tracking changes more effectively 
-in GitHub.  If you would like to contribute a conversion, [fork, convert, then submit a pull request][8]. 
-Once we receive the pull request, we will evaluate the request to make sure it follows the format 
-and philosophy of the project, and then incorporate it in this repository (with our thanks!).
-
-Each to-be-converted lab folder contains the following resources:
-
-+ **Module *n* Lab.md** - Markdown file of lab - typically a stub
-+ **SOURCE Module *n* Lab.docx** - MS Word document of the lab *to be converted to Markdown*
-+ **figures** - Folder containing all images reference in the lab
-+ **Lab *n* Data** - Folder containing all data referenced in the lab
 
 ### Completed Lab Contents
 

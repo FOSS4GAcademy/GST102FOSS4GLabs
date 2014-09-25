@@ -50,7 +50,8 @@ In this task, we will look at the data dictionary given to us with some census d
 ![Attribute Table and Data Dictionary](figures/Attribute_Table_and_Data_Dictionary.png "Attribute Table and Data Dictionary")
 
 #### Task 1.1 Using a Data Dictionary
-1.	The data for this lab is located on the lab machine at: C:\GST102\Lab 3\Data.
+1.	The data for this lab is located on the lab machine at: C:
+2.	GST102/Lab 3/Data.
 2.	Open QGIS Desktop 2.2.0.
 3.	Click on the Browser tab. If the Browser tab is not enabled from the menu bar choose View -> Panels -> Browser.
 4.	Browse to the Lab 3 Data folder, right click on the Data folder and choose Add as a Favourite. 

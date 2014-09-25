@@ -140,7 +140,7 @@ This QGIS project has three data layers from a GRASS Database however, you need 
 
 5.	 From the GRASS toolbar, click on the Open Mapset ![Open Mapset button](figures/Open_Mapset_button.png "Open Mapset button")  button. Fill out the Select GRASS Mapset window as in the figure below.
  
-	a.	The Gisdbase should be: Lab 6\Data\GRASSdb
+	a.	The Gisdbase should be: Lab 6/Data/GRASSdb
 
 	b.	Location: Lab6_SanFrancisco
 
@@ -182,11 +182,11 @@ The GRASS Tools window has three tabs: Modules Tree, Modules List and Browser. T
 
 	h.	Click Run
 
-![v.net Tool](figures/v.net_Tool.png "v.net Tool")
+![v.net Tool](figures/v_net_Tool.png "v.net Tool")
 
 11.	While running the Output tab will be visible (figure below). Click the View output button to add the network dataset to QGIS.
 
-![v.net_Tool_Successfully_Finished](figures/v.net_Tool_Successfully_Finished.png "v.net_Tool_Successfully_Finished")
+![v.net_Tool_Successfully_Finished](figures/v_net_Tool_Successfully_Finished.png "v.net_Tool_Successfully_Finished")
 
 12.	For now, leave the GRASS tools window open. You may want to move it to the side so you can see the map.
 13.	Turn off the SF_FireStations and SF_Police layers.
@@ -208,7 +208,7 @@ The GRASS Tools window has three tabs: Modules Tree, Modules List and Browser. T
 	d.	Name for output vector map: PoliceSt_Allocation
 
 
-![v.net.alloc Tool](figures/v.net.alloc_Tool.png "v.net.alloc Tool")
+![v.net.alloc Tool](figures/v_net_alloc_Tool.png "v.net.alloc Tool")
 
 19.	When the tool is set up correctly, click Run. When complete click View output.
 20.	Open the attribute table for the PoliceSt_Allocation layer. Notice that it simply has the cat ID of each of the 14 police stations. 

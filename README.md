@@ -15,7 +15,7 @@ This curriculum currently contains labs written to use FOSS4G software such as Q
 + [x] Lab 7 - Raster Data Analysis - Working with Topographic Data
 + [x] Lab 8 - Raster Data Analysis - Density Surfaces
 
-*Labs with a checkmark are completely converted to Markdown*
+*Labs with a check mark are completely converted to Markdown*
 
 ### Completed Lab Contents
 
@@ -24,8 +24,9 @@ software it is written for (ex. `Module 1 Lab\QGIS 2.2\...`).  The hope is that 
 
 Each lab contains the following four resources:
 
-+ **Module *n* Lab.md** - Markdown file of lab
-+ **Module *n* Lab.docx** - MS Word document of the lab
++ **Module *n* Lab.md** - Markdown file of lab - *This is the source document that should be updated*
++ **Module *n* Lab.docx** - Word Document of the lab converted from Markdown source
++ **Module *n* Lab.pdf** - PDF document of the lab converted from Markdown source
 + **figures** - Folder containing all images reference in the lab
 + **Lab *n* Data** - Folder containing all data referenced in the lab
 

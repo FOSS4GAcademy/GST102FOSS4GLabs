@@ -58,9 +58,9 @@ We recommend that you do not watch the videos before you attempt the tasks.  The
 	
 This lab focuses on the Sierra National Forest in California. Datasets include: the National Forest boundary, Ranger Districts, and habitat data for both spotted owl and Southwest willow flycatcher. In this first task, you will be clipping data to the study area. The spotted owl is listed as Threatened and the southwest willow flycatcher is listed as endangered by the U.S. Fish and Wildlife Service.
 
-![Merged DEM](figures/Southwest_Willow_Flycatcher.jpg "Merged DEM") 
+![Southwest Willow Flycatcher](figures/Southwest_Willow_Flycatcher.jpg "Southwest Willow Flycatcher") 
 
-![Merged DEM](figures/Spotted_Owl.jpg "Merged DEM") 
+![Spotted Owl](figures/Spotted_Owl.jpg "Spotted Owl") 
 
 2.	Open QGIS Desktop 2.2.0
 3.	Add both the Sierra_Natl_Forest.shp and CA_Spotted_Owl_HmRngCore.shp shapefiles to QGIS Desktop. Move the Sierra National Forest layer below the spotted owl layer. 
@@ -177,7 +177,7 @@ Remember that data layers need to be in the same coordinate reference system whe
 12.	Since it is in a different coordinate reference system than the other datasets, you will first have to save it to a new coordinate reference system. Right click on Sierra_Ranger_Dist and choose Save as…
 13.	Fill out the  Save vector layer as… form as shown in the figure below. You can find the output coordinate reference system by searching on the EPSG code for CA Albers: 3310.
 
-![Save Vector Layer as...](figures/Save_Vector_Layer_as....png "Save Vector Layer as")
+![Save Vector Layer as...](figures/Save_Vector_Layer_as.png "Save Vector Layer as")
 
 14.	Once the layer has been re-projected, Remove the original Ranger District layer from QGIS Desktop. 
 15.	Style the new Albers Ranger District layer with a Fill of No Brush and a Border of dark green (figure below).

@@ -97,7 +97,7 @@ Now you understand the data you have to work with. You also know that you will h
 	
 2.	From the menu bar choose Processing -> ToolBox. Notice at the bottom of the ToolBox panel that there is a toggle between a Simplified and Advanced Interface to the Toolbox. All the tools are available, no matter which view you choose. However, this setting will determine the view of geoprocessing algorithms in the Graphical Modeler as well. For purposes of this lab, choose the Advanced interface.
 
-3.	There is a default folder for Models, and if saved there they will show up as models in Toolbox -> Models. You can set the location of this default folder. From the menu bar choose Processing -> Options and configuration. Expand the Models section. Double click the current default folder and an ellipsis button will appear to the right. Click on the ellipsis button, navigate to the Lab 5\Data\MyData folder, and click Select folder (figure below). Click OK to close the Processing options.
+3.	There is a default folder for Models, and if saved there they will show up as models in Toolbox -> Models. You can set the location of this default folder. From the menu bar choose Processing -> Options and configuration. Expand the Models section. Double click the current default folder and an ellipsis button will appear to the right. Click on the ellipsis button, navigate to the Lab 5/Data/MyData folder, and click Select folder (figure below). Click OK to close the Processing options.
 
 ![Processing options](figures/Processing_options.png "Processing options")
 

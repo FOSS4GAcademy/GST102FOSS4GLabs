@@ -94,7 +94,7 @@ NOTE: In this example both join fields have the same name. However, this is not 
 19.	To make the join permanent simply right click on the layer and choose Save as…This will allow you to save a new copy of the countyp010 shapefile with the new attributes included. Name the new shapefile countyp010_census.shp (figure below).
 
 
-![Save vector layer as...](figures/Save_vector_layer_as....png "Save vector layer as...")
+![Save vector layer as...](figures/Save_vector_layer_as.png "Save vector layer as...")
 
 20.	You can now remove the original county layer from the map. Right click and choose Remove. 
 21.	Save the project as Lab 2.qgs
@@ -154,7 +154,7 @@ In this lab, you learned to join tabular data with a spatial component to a shap
 
 ### 7 Challenge Assignment
 
-There are several more datasets in C:\GST102\Lab 2\Data\ChallengeData. There is a World_Countries shapefile and two tabular datasets: CO2_Readings_World.xls and RenewableEnergy_Percentages.dbf. Both of these tabular formats can be brought into QGIS Desktop as tables. Identify the fields by which these two tables can be joined to the World_Countries shapefile. NOTE: You can add additional joins to a shapefile by just repeating the process in Task 1  
+There are several more datasets in C:/GST102/Lab 2/Data/ChallengeData. There is a World_Countries shapefile and two tabular datasets: CO2_Readings_World.xls and RenewableEnergy_Percentages.dbf. Both of these tabular formats can be brought into QGIS Desktop as tables. Identify the fields by which these two tables can be joined to the World_Countries shapefile. NOTE: You can add additional joins to a shapefile by just repeating the process in Task 1  
 
 Once you have joined the data make two maps: 1) Showing CO2 readings by country and 2) RenewableEnergy_Percentages by country.
 

@@ -59,7 +59,7 @@ Once it is installed, check the box to enable it. Close the Plugin manager.
 	
 	a.	Input point layer = Place_Names
 
-	b.	Output raster = Data\MyData\TownDensity.tif
+	b.	Output raster = Data/MyData/TownDensity.tif
 
 	c.	Output format = GeoTIFF
 
@@ -134,7 +134,7 @@ This is a more pleasing rendering and is very useful for a visual interpretation
 	
 	a.	Input file (raster) = PopulationCenters
 
-	b.	Output file for polygons (shapefile) = MyData\PopulationCenters.shp
+	b.	Output file for polygons (shapefile) = MyData/PopulationCenters.shp
 
 	c.	Check the box for Field name
 
@@ -222,7 +222,7 @@ It can also be very useful to have data represented in the raster data model. Ra
 
 	b.	Attribute field = TLID (NOTE: this can be any numeric attribute. Often it will be a field that assigned some sort of weight to the output raster cells. Here we will simply use the TLID column.)
 
-	c.	Output file for rasterized vectors (raster) = MyData\Roads_raster.tif (NOTE: If you get the message ‘The output file doesn’t exist. You must set up the output size or resolution to create it.’ Click OK.
+	c.	Output file for rasterized vectors (raster) = MyData/Roads_raster.tif (NOTE: If you get the message ‘The output file doesn’t exist. You must set up the output size or resolution to create it.’ Click OK.
 
 	d.	Take the remaining defaults.
 

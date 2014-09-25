@@ -136,7 +136,7 @@ Now that you have created the slope and aspect data you will reclassify them int
 
 	c.	Cells with slope values from 45-55 degrees will receive a new value of 2 and those cells with values greater than 55 will receive a new value of 3. 
 
-	d.	Save the text file to the Lab 7\Data\MyData folder and name it Slope_rRecode_Rules.txt.
+	d.	Save the text file to the Lab 7/Data/MyData folder and name it Slope_rRecode_Rules.txt.
 
 
 	![Slope Classification Rules](figures/Slope_Classification_Rules.png "Slope Classification Rules") 
@@ -145,13 +145,13 @@ Now that you have created the slope and aspect data you will reclassify them int
 	
 	a.	Set the Input layer to Slope. 
 
-	b.	Navigate to the Lab 7\Data\MyData folder and select the Slope_rRecode_Rules.txt as the File containing recode rules. 
+	b.	Navigate to the Lab 7/Data/MyData folder and select the Slope_rRecode_Rules.txt as the File containing recode rules. 
 
 	c.	Name the output file Slope_ReCode.img (figure below). 
 
 	d.	Click Run.
 
-![r.recode Parameters](figures/r.recode_Parameters.png "r.recode Parameters")
+![r.recode Parameters](figures/r_recode_Parameters.png "r.recode Parameters")
 
 4.	The new layer will be called Output raster layer in the Table of Contents. It appears to have only two categories: 1) black and 2) white. Open the Layer Properties -> Style tab. 
 	
@@ -191,14 +191,14 @@ Now you will recode the Aspect data in the same fashion. This plant prefers west
 	
 	a.	Set the Input layer to Aspect.
  
-	b.	Navigate to the Lab 7\Data\MyData folder and select the Aspect_rRecode_Rules.txt as the File containing recode rules. 
+	b.	Navigate to the Lab 7/Data/MyData folder and select the Aspect_rRecode_Rules.txt as the File containing recode rules. 
 
 	c.	Name the output file Slope_ReCode.img (figure below). 
 
 	d.	Click Run
 
 
-![r.recode_Aspect_Parameters](figures/r.recode_Aspect_Parameters.png "r.recode_Aspect_Parameters")
+![r.recode_Aspect_Parameters](figures/r_recode_Aspect_Parameters.png "r.recode_Aspect_Parameters")
 
 8.	Save you QGIS project.
 

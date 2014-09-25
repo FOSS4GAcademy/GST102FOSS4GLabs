@@ -52,7 +52,7 @@ Spatial Analysis is a crucial aspect of GIS; the tools allow the user to analyze
 
 	+ Lines – uses an ordered set of coordinates to define a linear feature.
 
-	+ o	Polygons – an area feature formed by a connected set of lines.
+	+ Polygons – an area feature formed by a connected set of lines.
 
 + Raster – a representation of the world as a surface divided into a regular grid of cells. Raster models are useful for storing data that varies continuously such as an aerial photograph.
 
@@ -88,7 +88,8 @@ We recommend that you do not watch the videos before you attempt the tasks.  The
 You will examine the vector lab exercise data using QGIS Browser.
 
 2.	Open QGIS Browser 2.2.0.
-3.	Expand the GST 102\Lab 1\Data folder, so that the data are visible in the File Tree.  You should see 7 shapefiles, an ERDAS Imagine img file and a tif file along with several XML metadata files.
+3.	Expand the GST 102
+4.	Lab 1\\Data folder, so that the data are visible in the File Tree.  You should see 7 shapefiles, an ERDAS Imagine img file and a tif file along with several XML metadata files.
 4.	To study the properties of each file select each one and choose the Metadata tab (figure below). 
 
 ![QGIS Browser Metadata Tab](figures/QGIS_Browser_Metadata_Tab.png "QGIS Browser Metadata Tab")
@@ -140,7 +141,7 @@ Now you will examine the raster datasets provided with this lab.
 
 1.	Open QGIS Browser 2.2.0.
 	
-2.	Expand the GST 102\Lab 1\Data folder, so that the data are visible in the File Tree.  Along with the shapefiles you will see an ERDAS Imagine raster img file and a GeoTiff file along with several XML metadata files.
+2.	Expand the GST 102\\Lab 1\\Data folder, so that the data are visible in the File Tree.  Along with the shapefiles you will see an ERDAS Imagine raster img file and a GeoTiff file along with several XML metadata files.
 	
 3.	To study the properties of each raster, select each one, and choose the Metadata tab.
 	 
@@ -173,7 +174,7 @@ This task will introduce you to another file format, the geodatabase. You’ll u
 1.	Open QGIS Desktop 2.2.0
 2.	Click the Add SpatiaLite Layer button ![SpatiaLite Layer button](figures/SpatiaLite_Layer_button.png "SpatiaLite Layer button")  opening the Add SpatiaLite Table(s) window.
 3.	Click the New button to establish a connection to a SpatiaLite database.
-4.	Select the C:\GST102\Lab 1\Data\geodatabase\NDG.sqlite file and click Open.
+4.	Select the C:\\GST102\\Lab 1\\Data\\geodatabase\\NDG.sqlite file and click Open.
 5.	Click Connect in the Add SpatiaLite Table(s) window (figure below).
 
 ![Add SpatiaLite Tables](figures/Add_SpatiaLite_Tables.png "Add SpatiaLite Tables")
@@ -188,7 +189,7 @@ This task will introduce you to another file format, the geodatabase. You’ll u
 ![DB Manager](figures/DB_Manager.png "DB Manager")
 
 9.	Click the Import Layer/File ![Import Layer File button](figures/Import_Layer_File_button.png "Import Layer File button")  button to open the Import vector layer window.
-10.	Click the ellipsis ![ellipsis button](figures/ellipsis_button.png "ellipsis button")  button to the right of the Input section to open the Choose the file to import window. Navigate to C:\GST102\Lab 1\Data\geodatabase folder and select NHDPOINT.shp. Click Open.
+10.	Click the ellipsis ![ellipsis button](figures/ellipsis_button.png "ellipsis button")  button to the right of the Input section to open the Choose the file to import window. Navigate to C:\\GST102\\Lab 1\\Data\\geodatabase folder and select NHDPOINT.shp. Click Open.
 11.	Name the Output table ‘nhdpoint’. Make sure Create new table option is checked. Under Options check Source SRID and type in 4269. This is the EPSG code for the geographic coordinate system NAD83. This is the CRS of the NHDPOINT shapefile (figure below). Click OK.
 
 ![Import Vector Layer](figures/Import_Vector_Layer.png "Import Vector Layer")
@@ -245,7 +246,7 @@ Now you will explore the coordinate reference systems of the lab data.
 
 8.	Reproject this layer to UTM Zone 14, NAD83 (figure below).
 
-![Save vector layer as...](figures/Save_vector_layer_as....png "Save vector layer as...")
+![Save vector layer as...](figures/Save_vector_layer_as.png "Save vector layer as...")
 
 ### Task 5 GIS Data Attributes and Attribute Tables###
 

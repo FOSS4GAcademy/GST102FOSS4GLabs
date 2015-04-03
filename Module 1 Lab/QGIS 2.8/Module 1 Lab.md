@@ -188,6 +188,7 @@ Explore the coordinate reference systems of the lab data.
 **Question #6: What is the current coordinate system of this data?**
 
 Let us say for purposes of our analysis that we would like to change the coordinate system of the BTS_Airport.shp layer.
+
 7. Right click on the layer in the Layers panel and choose Save as…. This will open the Save vector layer as window.
 8. Referencing the figure below, reproject this layer to UTM Zone 14, NAD83 and have it added to the map canvas.
 

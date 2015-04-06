@@ -1,0 +1,479 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.2.0-Valmiera">
+    <title></title>
+    <relations/>
+    <mapcanvas>
+        <units>meters</units>
+        <extent>
+            <xmin>581290.91658787056803703</xmin>
+            <ymin>3022442.35993791418150067</ymin>
+            <xmax>714796.51367218466475606</xmax>
+            <ymax>3123677.40230531198903918</ymax>
+        </extent>
+        <projections>0</projections>
+        <destinationsrs>
+            <spatialrefsys>
+                <proj4>+proj=utm +zone=14 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                <srsid>2291</srsid>
+                <srid>26914</srid>
+                <authid>EPSG:26914</authid>
+                <description>NAD83 / UTM zone 14N</description>
+                <projectionacronym>utm</projectionacronym>
+                <ellipsoidacronym>GRS80</ellipsoidacronym>
+                <geographicflag>false</geographicflag>
+            </spatialrefsys>
+        </destinationsrs>
+        <layer_coordinate_transform_info/>
+    </mapcanvas>
+    <legend updateDrawingOrder="true" activeLayer="Airports20140624134830005">
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Airports" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Airports20140624134830005" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Water_features" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Water_features20140624134830101" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Roads" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Roads20140624134830079" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="CityBoundaries" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="CityBoundaries20140624134830030" visible="1"/>
+            </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Counties" showFeatureCount="0">
+            <filegroup open="true" hidden="false">
+                <legendlayerfile isInOverview="0" layerid="Counties20140624134830060" visible="1"/>
+            </filegroup>
+        </legendlayer>
+    </legend>
+    <projectlayers layercount="5">
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>Airports20140624134830005</id>
+            <datasource>./Data/Airports.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Airports</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=14 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2291</srsid>
+                    <srid>26914</srid>
+                    <authid>EPSG:26914</authid>
+                    <description>NAD83 / UTM zone 14N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <provider encoding="System">ogr</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol alpha="1" type="marker" name="0">
+                        <layer pass="0" class="SimpleMarker" locked="0">
+                            <prop k="angle" v="0"/>
+                            <prop k="color" v="77,80,230,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="horizontal_anchor_point" v="1"/>
+                            <prop k="name" v="circle"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="outline_style" v="solid"/>
+                            <prop k="outline_width" v="0"/>
+                            <prop k="outline_width_unit" v="MM"/>
+                            <prop k="scale_method" v="area"/>
+                            <prop k="size" v="2"/>
+                            <prop k="size_unit" v="MM"/>
+                            <prop k="vertical_anchor_point" v="1"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale scalemethod="area"/>
+            </renderer-v2>
+            <customproperties/>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>ST_NAME</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>CityBoundaries20140624134830030</id>
+            <datasource>./Data/CityBoundaries.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>CityBoundaries</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=14 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2291</srsid>
+                    <srid>26914</srid>
+                    <authid>EPSG:26914</authid>
+                    <description>NAD83 / UTM zone 14N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <provider encoding="System">ogr</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_unit" v="MM"/>
+                            <prop k="color" v="167,187,122,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale scalemethod="area"/>
+            </renderer-v2>
+            <customproperties/>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>NAME</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>Counties20140624134830060</id>
+            <datasource>./Data/Counties.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Counties</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=14 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2291</srsid>
+                    <srid>26914</srid>
+                    <authid>EPSG:26914</authid>
+                    <description>NAD83 / UTM zone 14N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <provider encoding="System">ogr</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol alpha="1" type="fill" name="0">
+                        <layer pass="0" class="SimpleFill" locked="0">
+                            <prop k="border_width_unit" v="MM"/>
+                            <prop k="color" v="68,169,162,255"/>
+                            <prop k="color_border" v="0,0,0,255"/>
+                            <prop k="offset" v="0,0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="style" v="solid"/>
+                            <prop k="style_border" v="solid"/>
+                            <prop k="width_border" v="0.26"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale scalemethod="area"/>
+            </renderer-v2>
+            <customproperties/>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>STATE</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>Roads20140624134830079</id>
+            <datasource>./Data/Roads.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Roads</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=14 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2291</srsid>
+                    <srid>26914</srid>
+                    <authid>EPSG:26914</authid>
+                    <description>NAD83 / UTM zone 14N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <provider encoding="System">ogr</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="118,205,89,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                            <prop k="width_unit" v="MM"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale scalemethod="area"/>
+            </renderer-v2>
+            <customproperties/>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>FULLNAME</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+        <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+            <id>Water_features20140624134830101</id>
+            <datasource>./Data/Water_features.shp</datasource>
+            <title></title>
+            <abstract></abstract>
+            <keywordList>
+                <value></value>
+            </keywordList>
+            <layername>Water_features</layername>
+            <srs>
+                <spatialrefsys>
+                    <proj4>+proj=utm +zone=14 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+                    <srsid>2291</srsid>
+                    <srid>26914</srid>
+                    <authid>EPSG:26914</authid>
+                    <description>NAD83 / UTM zone 14N</description>
+                    <projectionacronym>utm</projectionacronym>
+                    <ellipsoidacronym>GRS80</ellipsoidacronym>
+                    <geographicflag>false</geographicflag>
+                </spatialrefsys>
+            </srs>
+            <provider encoding="System">ogr</provider>
+            <previewExpression></previewExpression>
+            <vectorjoins/>
+            <renderer-v2 symbollevels="0" type="singleSymbol">
+                <symbols>
+                    <symbol alpha="1" type="line" name="0">
+                        <layer pass="0" class="SimpleLine" locked="0">
+                            <prop k="capstyle" v="square"/>
+                            <prop k="color" v="203,85,207,255"/>
+                            <prop k="customdash" v="5;2"/>
+                            <prop k="customdash_unit" v="MM"/>
+                            <prop k="draw_inside_polygon" v="0"/>
+                            <prop k="joinstyle" v="bevel"/>
+                            <prop k="offset" v="0"/>
+                            <prop k="offset_unit" v="MM"/>
+                            <prop k="penstyle" v="solid"/>
+                            <prop k="use_custom_dash" v="0"/>
+                            <prop k="width" v="0.26"/>
+                            <prop k="width_unit" v="MM"/>
+                        </layer>
+                    </symbol>
+                </symbols>
+                <rotation/>
+                <sizescale scalemethod="area"/>
+            </renderer-v2>
+            <customproperties/>
+            <blendMode>0</blendMode>
+            <featureBlendMode>0</featureBlendMode>
+            <layerTransparency>0</layerTransparency>
+            <displayfield>FULLNAME</displayfield>
+            <label>0</label>
+            <labelattributes>
+                <label fieldname="" text="Label"/>
+                <family fieldname="" name="MS Shell Dlg 2"/>
+                <size fieldname="" units="pt" value="12"/>
+                <bold fieldname="" on="0"/>
+                <italic fieldname="" on="0"/>
+                <underline fieldname="" on="0"/>
+                <strikeout fieldname="" on="0"/>
+                <color fieldname="" red="0" blue="0" green="0"/>
+                <x fieldname=""/>
+                <y fieldname=""/>
+                <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+                <angle fieldname="" value="0" auto="0"/>
+                <alignment fieldname="" value="center"/>
+                <buffercolor fieldname="" red="255" blue="255" green="255"/>
+                <buffersize fieldname="" units="pt" value="1"/>
+                <bufferenabled fieldname="" on=""/>
+                <multilineenabled fieldname="" on=""/>
+                <selectedonly on=""/>
+            </labelattributes>
+            <editform>.</editform>
+            <editforminit></editforminit>
+            <featformsuppress>0</featformsuppress>
+            <annotationform>.</annotationform>
+            <editorlayout>generatedlayout</editorlayout>
+            <excludeAttributesWMS/>
+            <excludeAttributesWFS/>
+            <attributeactions/>
+        </maplayer>
+    </projectlayers>
+    <properties>
+        <SpatialRefSys>
+            <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+            <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+            <ProjectCRSID type="int">3452</ProjectCRSID>
+        </SpatialRefSys>
+        <Paths>
+            <Absolute type="bool">false</Absolute>
+        </Paths>
+        <Gui>
+            <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+            <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+            <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+            <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+            <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+            <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+            <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+        </Gui>
+        <PositionPrecision>
+            <DecimalPlaces type="int">2</DecimalPlaces>
+            <Automatic type="bool">true</Automatic>
+        </PositionPrecision>
+    </properties>
+</qgis>

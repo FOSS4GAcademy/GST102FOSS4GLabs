@@ -1,0 +1,3 @@
+COMMAND: v.in.ogr -o dsn="C:\GST102\Lab 6\Data\SF_FireStations.shp" output="SF_FireStations" min_area=0.0001 snap=-1
+GISDBASE: C:\GST102\Lab 6\Data\GRASSdb
+LOCATION: Lab6_SanFrancisco MAPSET: PERMANENT USER: FOSS4G DATE: Fri Jul 04 11:18:52 2014

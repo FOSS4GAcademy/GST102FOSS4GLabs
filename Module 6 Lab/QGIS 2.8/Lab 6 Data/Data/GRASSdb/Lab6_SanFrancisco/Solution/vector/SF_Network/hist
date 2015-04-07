@@ -1,0 +1,7 @@
+COMMAND: v.in.ogr -o dsn="C:\GST102\Lab 6\Data\MTA_DPT_SpeedLimits.shp" output="SF_Streets" min_area=0.0001 snap=-1 location="Lab6_SanFrancisco"
+GISDBASE: C:\GST102\Lab 6\Data\GRASSdb
+LOCATION: Lab6_SanFrancisco MAPSET: PERMANENT USER: FOSS4G DATE: Fri Jul 04 11:16:02 2014
+---------------------------------------------------------------------------------
+COMMAND: v.net input="SF_Streets@PERMANENT" points="SF_Police@PERMANENT" output="SF_Network" operation="connect" alayer=1 nlayer=2 thresh=300
+GISDBASE: C:\GST102\Lab 6\Data\GRASSdb
+LOCATION: Lab6_SanFrancisco MAPSET: MyData USER: FOSS4G DATE: Fri Jul 04 12:32:26 2014

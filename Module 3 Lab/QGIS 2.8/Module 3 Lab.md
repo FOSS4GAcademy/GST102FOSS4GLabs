@@ -2,7 +2,7 @@
 ## Lab 3 - Advanced Attributes and Spatial Queries for Data Exploration
 ### Objective – Understanding Attribute Queries and Spatial Queries
 
-Document Version: 4/5/2015
+Document Version: 4/8/2015
 
 **FOSS4G Lab Author:**
 Kurt Menke, GISP
@@ -51,7 +51,7 @@ In this task, we will look at the data dictionary given to us with some census d
 ![Data as a Favourite](figures/Data_as_a_Favourite.png "Data as a Favourite")
 
 6. Select the State_2010Census_DP1 layer and drag it onto the map canvas to add it to QGIS Desktop.
-7. Now you’ll set the coordinate reference system for the map. From the menu bar go to Project | Project Properties. 
+7. Now you will set the coordinate reference system for the map. From the menu bar go to Project | Project Properties. 
 8. Enable ‘on the fly’  CRS transformation and put the map into NAD83/Conus Albers (EPSG:5070).
 7. Save the project as Lab 3 Census.qgs in your lab folder.
 8. Open the attribute table for the State_2010_DP1 layer. 
@@ -87,19 +87,19 @@ The data dictionary table has two columns: Item and Stub. Item contains the fiel
 
 Using the map you have just created in Task 1.1, you will now perform some queries against the census data.
 
-1. If you don’t have it open, open the Lab 3 Census.qgs project created in Task 1.1.
+1. If you do not have it open, open the Lab 3 Census.qgs project created in Task 1.1.
 3. Open the attribute table for the Census layer. 
 4. Click the Select features using an expression button ![expression button](figures/expression_button.png "expression button") . The Select by Expression window opens.
 4. You have mapped the states by the under 5 male population. Now you want to know which states have a total population less than 1,000,000. The figure below shows the layout of the Select by Expression window.
 
 	+ Fields and Values are included in the list of functions. You can expand the list to see the fields in the dataset.
 	+ There are a suite of operators to use in building your expression.
-	+ The expression window. Double clicking on Fields, Values and Operators will place those objects in the expression window. It is best to build your expression this way instead of trying to type it. This will allow you to avoid syntax errors.
+	+ The expression window. Double-clicking on Fields, Values and Operators will place those objects in the expression window. It is best to build your expression this way instead of trying to type it. This will allow you to avoid syntax errors.
 	+ Select options: By default, you will create a new selection. However, you can choose to add to an already existing selection, have records removed from an existing selection, or select from an existing selected set. 
 
 ![Select by Expression Window](figures/Select_by_Expression_Window.png "Select by Expression Window")
 
-5. First, you’ll have to refer to the data dictionary to see which field contains the total population values. To select those states with a total population less than 1,000,000 you will:
+5. First, you will have to refer to the data dictionary to see which field contains the total population values. To select those states with a total population less than 1,000,000 you will:
 
 	1. Double click on field DP0010001
 	2. Expand the Operators in the Function list and choose ‘<’
@@ -107,7 +107,7 @@ Using the map you have just created in Task 1.1, you will now perform some queri
 
 6. If your expression looks like the figure below. Click Select to perform the selection then close the Select by expression window.
 
-![Population Select by Expression window](figures/Population_Select_by_Expression_window.png "Population Select by Expression window")
+![Population Select by Expression Window](figures/Population_Select_by_Expression_window.png "Population Select by Expression Window")
 
 7. The selected records are highlighted in blue in the attribute table. 
 8. Click the Show All Features dropdown (bottom-left corner of attribute table window) and choose Show Selected Records. Now you are viewing only the 7 selected records.
@@ -118,11 +118,11 @@ Using the map you have just created in Task 1.1, you will now perform some queri
 9. Close the attribute table.
 10. The corresponding features are selected in the map as well. Your map should now resemble the figure below.
 
-![States with a Total Population Less Than 1,000,000 Selected](figures/States_with_a_Total_Population_Less_Than_1,000,000_Selected.png "States with a Total Population Less Than 1,000,000 Selected")
+![States With a Total Population Less Than 1,000,000 Selected](figures/States_with_a_Total_Population_Less_Than_1,000,000_Selected.png "States With a Total Population Less Than 1,000,000 Selected")
 
 11. Re-open the attribute table and create an expression selecting the states with a total population greater than 10,000,000.  Your map should now match the figure below with seven selected states.
 
-![States with a Total Population Greater than 10,000,000 Selected](figures/States_with_a_Total_Population_Greater_than_10,000,000_Selected.png "States with a Total Population Greater than 10,000,000 Selected")
+![States With a Total Population Greater than 10,000,000 Selected](figures/States_with_a_Total_Population_Greater_than_10,000,000_Selected.png "States With a Total Population Greater than 10,000,000 Selected")
 
 ### Task 2 - Buffering and Spatial Queries
 Buffering is a key vector analysis tool in GIS. It gives us the ability to create a new GIS layer representing a buffer distance from some map feature(s).
@@ -136,7 +136,7 @@ Buffering is a key vector analysis tool in GIS. It gives us the ability to creat
 
 To identify the area impacted by the tornado, you will create a 900 meter buffer around the path.
 
-3. From the menu bar choose Vector | Geoprocessing tools | Buffer(s). Fill out the Buffer tool with the parameters seen in the figure below.
+3. From the menu bar choose Vector | Geoprocessing Tools | Buffer(s). Fill out the Buffer tool with the parameters seen in the figure below.
 
 ![Tornado Path QGIS Project 2](figures/Tornado_Path_QGIS_Project_2.png "Tornado Path QGIS Project 2")
 
@@ -156,7 +156,7 @@ Looking at the result we can immediately see the areas affected by the tornado.
 In this task, you will learn how to identify exactly which parcels were affected by the tornado.
 
 1. Begin with the QGIS Desktop map as you saved it at the conclusion of the previous task.
-2. From the menu bar choose Vector | Research tools | Select by location.
+2. From the menu bar choose Vector | Research Tools | Select by location.
 
 Using select by location, you can conduct spatial queries. In this case, we can determine which parcels overlap with the tornado buffer. 
 
@@ -171,7 +171,7 @@ Using select by location, you can conduct spatial queries. In this case, we can 
 
 From here, you could save out the selected parcels as a new shapefile. To do this you would right-click on the parcel layer and choose Save selection as… You could also open the parcel attribute table and Show Selected Features to examine the attributes of those affected parcels. 
 
-5. Finally you’ll examine the total value of the affected parcels. From the menu bar choose Vector | Analysis Tools | Basic Statistics.
+5. Finally you will examine the total value of the affected parcels. From the menu bar choose Vector | Analysis Tools | Basic Statistics.
  
 	1. Select parcels as the Input Vector Layer. 
 	2. Check Use only selected features.

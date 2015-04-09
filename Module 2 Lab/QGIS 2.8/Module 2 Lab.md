@@ -2,7 +2,7 @@
 ## Lab 2 - Introduction to Geospatial Analysis
 ### Objective – Understand Attribute Table Joins and Data Classification
 
-Document Version: 4/2/2015
+Document Version: 4/8/2015
 
 **FOSS4G Lab Author:**
 Kurt Menke, GISP
@@ -39,7 +39,7 @@ Classification – the process of breaking up data values into meaningful groups
 
 ### Task 1 - Data Exploration and Joins
 	
-The data for this lab includes one shapefile: U.S. County boundaries (countyp010). The layer covers only the lower 48 contiguous states. There is also one tabular dataset: U.S. Census data (ce2000t.dbf) for counties. 
+The data for this lab includes one shapefile: U.S. County boundaries (countyp010). The layer only covers the lower 48 contiguous states. There is also one tabular dataset: U.S. Census data (ce2000t.dbf) for counties. 
 
 In order to map the data in the table, we will need to join it to the county shapefile. In order to perform such a join there needs to be a common attribute between the table and the shapefile. 
 
@@ -48,7 +48,7 @@ In order to map the data in the table, we will need to join it to the county sha
 
 ![Counties Attribute Table](figures/Counties_Attribute_Table.png "Counties Attribute Table")
 
-You can see that there are 3,283 records in the table. What kind of attributes does this data set have? The Area and Perimeter fields are created as part of the file format (shapefile). These represent the area and perimeter of each feature in map units. Since this dataset is in the Geographic Coordinate System these units are in decimal degrees. This is a difficult unit to work with so these don’t add much information. The Square_Mil field at the far right is much more useful. This holds the area of each polygon in square miles. CountyP010 is an unique ID. Then there are fields for State abbreviation, county name and FIPS codes. 
+You can see that there are 3,283 records in the table. What kind of attributes does this data set have? The Area and Perimeter fields are created as part of the file format (shapefile). These represent the area and perimeter of each feature in map units. Since this dataset is in the Geographic Coordinate System these units are in decimal degrees. This is a difficult unit to work with so these values do not provide add much information. The Square_Mil field at the far right is much more useful. This holds the area of each polygon in square miles. CountyP010 is an unique ID. Then there are fields for State abbreviation, county name and FIPS codes. 
 
 FIPS stands for Federal Information Processing Standards. They are unique codes for census designations. Each state has a FIPS code and each county has a FIPS code. This data set has a column for the State_FIPS but not the county fips alone. The first two digits in the FIPS column are the State FIPS code. The last three digits in the FIPS column are the County FIPS code. Combining both State and County FIPS codes provides a unique ID for each county in the U.S.
 
@@ -56,17 +56,17 @@ With this data, you can identify the state and county names and the size of each
 
 5. Close the county attribute table. 
 6. To add a table click the Add Vector Data button and browse to the lab data folder. Set the file type filter to All Files (\*)(\*.\*). Select the ce2000t.dbf file and add it to QGIS Desktop.
-7. Right click on the table and choose Open Attribute Table from the context menu. Examine the attributes.
+7. Right-click on the table and choose Open Attribute Table from the context menu. Examine the attributes.
 8. This table contains many fields of socioeconomic data such as total population, population by age, population by gender etc. 
 
 What field can be used to join this to the Counties attribute table? At first you might think the County column would work. Click the County column header so that an upward facing arrow appears. (Remember that this allows you to toggle back and forth between an ascending and descending sort of the data.)
 
 Notice that there are numerous Adams County entries from several states (shown in figure below). Therefore, County name is not a unique ID. However, the FIPS column is a unique ID that will be used to join to the FIPS column in the shapefile.
 
-![Table sorted by County](figures/Table_sorted_by_County.png "Table sorted by County")
+![Table Sorted By County](figures/Table_sorted_by_County.png "Table Sorted By County")
 
 10. Close the attribute table.
-11. Right click on the countyp010 layer and choose Properties from the context menu to open the Layer Properties window.
+11. Right-click on the countyp010 layer and choose Properties from the context menu to open the Layer Properties window.
 12. Click on the Joins tab. This is where you configure joins for the layer. 
 13. Click the Add Join button ![Add Join button](figures/Add_Join_button.png "Add Join button") . The Add vector join window opens. 
 
@@ -77,17 +77,17 @@ The Join layer is the table you will join to the shapefiles attribute table. Sin
 
 *Note*: In this example both join fields have the same name. However, this is not a requirement. Both fields do need to have the same data type. For example, they need to both be text fields or both integer fields.
 
-![Add vector join](figures/Add_vector_join.png "Add vector join")
+![Add Vector Join](figures/Add_vector_join.png "Add Vector Join")
 
 14. Click OK.
 15. You will see the join show up in the Join window (shown in figure below). The join has now been created.
 
-![Join established](figures/Join_established.png "Join established")
+![Join Established](figures/Join_established.png "Join Established")
 
 16. Click OK on the Layer Properties window to close it.
 17. Re-open the countyp010 attribute table.  You will see all the additional fields appended to the right side.
 
-This join exists only within this QGIS Desktop document. In other words the data haven’t been physically added to the shapefile. However, within this map document the new fields will act as all the others. Let's make the join permanent.
+This join exists only within this QGIS Desktop document. In other words, the data have not been physically added to the shapefile. However, within this map document the new fields will act as all the others. Let's make the join permanent.
 
 19. Right-click on the county layer in the Layers panel and choose Save as… from the context menu. This will allow you to save a new copy of the countyp010 shapefile with the new attributes included.
 20. Name the new shapefile countyp010_census.shp in your lab directory and add it to the map canvas (options shown in figure below).
@@ -98,7 +98,7 @@ This join exists only within this QGIS Desktop document. In other words the data
 21. Save the project as Lab 2.qgs in your lab directory.
 
 ### Task 2 - Classification
-Now that you’ve joined data to the counties layer, you will explore different ways to symbolize the data based on the new attributes.
+Now that you have joined data to the counties layer, you will explore different ways to symbolize the data based on the new attributes.
 
 1. Open QGIS Desktop and open Lab 2.qgs if it is not already open.
 2. From the menu bar choose Project | Project Properties, click on the CRS tab and ensure that Enable ‘on the fly’ CRS transformation is checked.
@@ -162,6 +162,10 @@ In this lab, you learned to join tabular data with a spatial component to a shap
 
 ### 5 Challenge Assignment (optional)
 
-There are several more datasets in the Lab 2 Data/ChallengeData directory. There is a World_Countries shapefile and two tabular datasets: CO2_Readings_World.xls and RenewableEnergy_Percentages.dbf. Both of these tabular formats can be brought into QGIS Desktop as tables. Identify the fields by which these two tables can be joined to the World_Countries shapefile. *Note*: You can add additional joins to a shapefile by just repeating the process in Task 1.
+There are several more datasets in the Lab 2 Data/ChallengeData directory. There is a World_Countries shapefile and two tabular datasets: CO2_Readings_World.xls and RenewableEnergy_Percentages.dbf. Both of these tabular formats can be brought into QGIS Desktop as tables. Identify the fields by which these two tables can be joined to the World_Countries shapefile. 
+
+*Note*: You can add additional joins to a shapefile by just repeating the process in Task 1.
+
+*Note*: Excel files (.xls/.xlsx) do not display in QGIS Browser, so use the Add Vector Layer button in QGIS Desktop to add Excel files to the QGIS project.
 
 Once you have joined the data make two maps: 1) Showing CO2 readings by country and 2) RenewableEnergy_Percentages by country.

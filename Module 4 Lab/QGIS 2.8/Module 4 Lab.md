@@ -2,7 +2,7 @@
 ## Lab 4 - Vector Data Analysis - Overlay Techniques
 ### Objective - Understanding Basic Vector Analysis Using Overlays
 
-Document Version: 4/5/2014
+Document Version: 4/8/2014
 
 **FOSS4G Lab Author:**
 Kurt Menke, GISP  
@@ -28,7 +28,7 @@ This lab includes the following tasks:
 + Task 1 - Clip
 + Task 2 - Intersection
 + Task 3 - Union
-+ Task 4 - Join Attributes by location
++ Task 4 - Join Attributes by Location
 
 
 ### 2 Objective Understanding Basic Vector Analysis Using Overlays
@@ -61,7 +61,7 @@ This lab focuses on the Sierra National Forest in California. Datasets include: 
 2. From the lab directory, add both the Sierra_Natl_Forest.shp and CA_Spotted_Owl_HmRngCore.shp shapefiles to QGIS Desktop.
 3. Move the Sierra National Forest layer below the spotted owl layer so the map canvas resembles the figure below.
 
-![Sierra National Forest and Spotted Owl data in QGIS](figures/Sierra_National_Forest_and_Spotted_Owl_data_in_QGIS.png "Sierra National Forest and Spotted Owl data in QGIS") 
+![Sierra National Forest and Spotted Owl Data in QGIS](figures/Sierra_National_Forest_and_Spotted_Owl_data_in_QGIS.png "Sierra National Forest and Spotted Owl Data in QGIS") 
 
 In this case, you are only interested in the data covering the Sierra National Forest. Notice that the spotted owl data covers far more territory than the forest. Therefore, you will clip the spotted owl data to the forest boundary. Clip will create a new shapefile consisting of the spotted owl polygons within the forest boundary. It is standard protocol to clip datasets to the extent of the study area. This reduces data to only that which needs to be processed, and makes processing and rendering faster.
 
@@ -111,7 +111,7 @@ You will now include the southwest willow flycatcher habitat data in the analysi
 
 4. Your map should now resemble the figure below.
 
-![All three layers in QGIS](figures/All_Three_Layers_in_QGIS.png "All three layers in QGIS") 
+![All Three Layers in QGIS](figures/All_Three_Layers_in_QGIS.png "All Three Layers in QGIS") 
 
 5. Use the Zoom in tool  ![Zoom in tool](figures/Zoom_in_tool.png "Zoom in tool") to drag a box and zoom in to the area outlined in black in the figure above.
 
@@ -129,7 +129,7 @@ You will notice that in this area, there is some overlap between the Southwest w
 
 	d. Add result to canvas checked
 
-![Intersect tool](figures/Intersect_tool.png "Intersect tool")
+![Intersect Tool](figures/Intersect_tool.png "Intersect Tool")
 
 7. When finished, Click OK to perform the intersect operation, and then click Close.
 8. Drag the OverlapAreas layer to the top of the layers list in the Layers panel so it draws on top of all other layers.
@@ -155,7 +155,7 @@ You will now combine both habitat layers in different ways using both the Union 
 
 	d. Add result to canvas checked
 
-![Union tool](figures/Union_tool.png "Union tool")
+![Union Tool](figures/Union_tool.png "Union Tool")
 
 3. When finished Click OK to perform the Union operation, and then click Close.
 
@@ -176,7 +176,7 @@ Now you will Dissolve all the polygons into one contiguous polygon layer represe
 
 	d. Add results to canvas checked
 
-![Dissolve tool](figures/Dissolve_tool.png "Dissolve tool")
+![Dissolve Tool](figures/Dissolve_tool.png "Dissolve Tool")
 
 6. When finished Click OK to perform the dissolve operation, and then click Close.
 7. The figure below shows the output of the Dissolve operation.
@@ -202,7 +202,7 @@ Remember that data layers need to be in the same coordinate reference system whe
 5. Right-click on Sierra_Ranger_Dist in the Layers panel and choose Save as…
 5. Fill out the  Save vector layer as… form as shown in the figure below. You can find the output coordinate reference system by searching on the EPSG code for CA Albers: 3310.
 
-![Save Vector Layer as...](figures/Save_Vector_Layer_as.png "Save Vector Layer as")
+![Save vector layer as...](figures/Save_Vector_Layer_as.png "Save vector layer as")
 
 6. Once the layer has been re-projected, remove the original Ranger District layer from the Layers panel. 
 7. Style the new Albers Ranger District layer with a Transparent Fill and a Border of dark green (result shown in figure below).

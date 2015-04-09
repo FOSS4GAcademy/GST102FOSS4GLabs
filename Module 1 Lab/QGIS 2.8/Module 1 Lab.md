@@ -98,23 +98,21 @@ Examine the raster datasets provided with this lab.
 3. Along with the shapefiles you will see an ERDAS Imagine raster file and a GeoTiff raster file along with several XML metadata files.
 3. To study the properties of each raster, select each one, and choose the Metadata tab.
 
-**Question # 2: Record the file format. This will be listed under the Driver section. (You can record the last line of that description which is the file format.) You will also record the pixel Dimensions and the Spatial Reference System in the space provided below.**
+**Question # 2: Record the file format. This will be listed under the Driver section. (You can record the last line of that description which is the file format.) You will also record the pixel Dimensions in the space provided below.**
 
 * Texasdem_tsms.img
 	* File format:
 	* Dimensions:
-	* Spatial Reference System:
 
 * tx_terrain_hillshade_tsms.tif
 	* File format:
 	* Dimensions: 
-	* Spatial Reference System:
 
 **Question # 3: Do these look to be discrete or continuous raster datasets?**
 
 ### Task 3 - Geodatabase
 
-This task will introduce you to another file format, the geodatabase. You’ll use QGIS Desktop to connect to, and explore the data contained in a SpatiaLite database. SpatiaLite is a SQLite database engine with spatial functions added. This means that spatial data layers can be stored in the relational database.
+This task will introduce you to another file format, the geodatabase. You will use QGIS Desktop to connect to, and explore the data contained in a SpatiaLite database. SpatiaLite is a SQLite database engine with spatial functions added. This means that spatial data layers can be stored in the relational database.
 
 1. Open QGIS Desktop.
 2. Click the Add SpatiaLite Layer button ![SpatiaLite Layer button](figures/SpatiaLite_Layer_button.png "SpatiaLite Layer button")  opening the Add SpatiaLite Table(s) window.
@@ -146,21 +144,19 @@ This task will introduce you to another file format, the geodatabase. You’ll u
 12. You should get a message that the Import was successful. Click OK.
 13. Click the Refresh ![Refresh button](figures/Refresh_button.png "Refresh button") button on the DB Manager. You should now see nhdpoint listed as a new table in the database with a point icon (shown in figure below). 
 
-![DB Manager with new layer imported](figures/DB_Manager_with_new_layer_imported.png "DB Manager with new layer imported")
+![DB Manager With New Layer Imported](figures/DB_Manager_with_new_layer_imported.png "DB Manager With New Layer Imported")
 
 14. Right-click on the nhdpoint layer in the DB Manager and choose Add to canvas. Close the DB Manager.
 
-![Add to canvas](figures/Add_to_canvas.png "Add to canvas")
+![Add To Canvas](figures/Add_to_canvas.png "Add To Canvas")
 
 15. You should now see the new point data added to QGIS (shown in figure below). You have successfully connected to a geodatabase and imported a shapefile into the database.
 
-![QGIS Desktop with new SpatiaLite layer added to map](figures/QGIS_Desktop_with_new_SpatiaLite_layer_added_to_map.png "QGIS Desktop with new SpatiaLite layer added to map")
+![QGIS Desktop With New SpatiaLite Layer Added to Map](figures/QGIS_Desktop_with_new_SpatiaLite_layer_added_to_map.png "QGIS Desktop With New SpatiaLite Layer Added to Map")
 
-16. Open QGIS Browser. Expand the SpatiaLite database connection. Notice that you are now connected to the NGD.sqlite database (see figure below).
+16. Open QGIS Browser. Expand the SpatiaLite database connection. Notice that you are now connected to the NGD.sqlite database (see figure below) and you can see the imported shapefile in the database.
 
-![QGIS Browser showing connection to SpatiaLite database](figures/QGIS_Browser_showing_connection_to_SpatiaLite_database.png "QGIS Browser showing connection to SpatiaLite database")
-
-17. You have successfully connected to a SpatiaLite geodatabase and imported a shapefile into the database!
+![QGIS Browser Showing Connection to SpatiaLite Database](figures/QGIS_Browser_showing_connection_to_SpatiaLite_database.png "QGIS Browser Showing Connection to SpatiaLite Database")
 
 **Question # 4:**
 What is a reason to import source data into a geodatabase?
@@ -189,7 +185,7 @@ Explore the coordinate reference systems of the lab data.
 
 Let us say for purposes of our analysis that we would like to change the coordinate system of the BTS_Airport.shp layer.
 
-7. Right click on the layer in the Layers panel and choose Save as…. This will open the Save vector layer as window.
+7. Right-click on the layer in the Layers panel and choose Save as…. This will open the Save vector layer as window.
 8. Referencing the figure below, reproject this layer to UTM Zone 14, NAD83 and have it added to the map canvas.
 
 ![Save vector layer as...](figures/Save_vector_layer_as.png "Save vector layer as...")
@@ -212,10 +208,10 @@ Let us say for purposes of our analysis that we would like to change the coordin
 
 **Question #11: If you wanted to identify all Regional airports from the TxDOT_ARPRT_SMALL shapefile on the map how would you do that?**
 
-### 4 Conclusion
+### 3 Conclusion
 In this lab, you were able to identify the data models, geometry, and number of features for several lab data sets. You connected to a SpatiaLite geodatabase and imported a shapefile into it. You identified the coordinate reference systems of data and reprojected a dataset. Finally, you reviewed working with attribute tables. Knowing how to determine the characteristics of datasets is a necessary step in spatial analysis.
 
-### 5 Discussion Questions
+### 4 Discussion Questions
 
 1. What is the importance of coordinate reference systems? Why are there so many different coordinate systems and map projections?
 2. Describe the pros and cons of rasters and vectors.

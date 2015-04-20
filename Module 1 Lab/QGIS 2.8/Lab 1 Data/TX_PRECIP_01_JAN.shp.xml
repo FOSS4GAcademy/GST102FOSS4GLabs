@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<metadata>
+	<idinfo>
+		<citation>
+			<citeinfo>
+				<origin>
+Chris Daly of Oregon State University and George Taylor of the Oregon
+Climate Service at Oregon State University
+</origin>
+				<pubdate>199804</pubdate>
+				<title Sync="TRUE">TX_PRECIP_01_JAN</title>
+				<pubinfo>
+					<pubplace>Portland, Oregon, USA</pubplace>
+					<publish>Water and Climate Center of the Natural Resources Conservation Service</publish>
+				</pubinfo>
+				<ftname Sync="TRUE">TX_PRECIP_01_JAN</ftname><geoform Sync="TRUE">vector digital data</geoform><onlink Sync="TRUE">\\Samwise\Mitchell\Working\Precip\Shp\TX_PRECIP_01_JAN.shp</onlink></citeinfo>
+		</citation>
+		<descript>
+			<abstract>
+This CD-ROM contains vector and polygon coverages of average monthly and annual
+precipitation for the climatological period 1961-90. Parameter-elevation Regressions
+on Independent Slopes Model (PRISM) derived raster data is the underlying data set
+from which the polygons and vectors were created. PRISM is an analytical model
+that uses point data and a digital elevation model (DEM) to generate gridded estimates
+of annual, monthly and event-based climatic parameters. Detailed descriptions
+of the PRISM raster data can be found with the accompanying raster data sets. For
+further information, the online PRISM homepage can be found at
+&lt;URL:http://www.ocs.orst.edu/prism/prism_new.html&gt;.
+</abstract>
+			<purpose>
+Display and/or analyses requiring spatially distributed monthly or annual
+precipitation for the climatological period 1961-90.
+</purpose>
+			<supplinf>
+There are many methods of interpolating precipitation from monitoring
+stations to grid points.  Some provide estimates of acceptable
+accuracy in flat terrain, but few have been able to adequately explain
+the extreme, complex variations in precipitation that occur in
+mountainous regions.  Significant progress in this area has been
+achieved through the development of PRISM (Parameter-elevation
+Regressions on Independent Slopes Model).  PRISM is an analytical
+model that uses point data and a digital elevation model (DEM) to
+generate gridded estimates of monthly and annual precipitation (as
+well as other climatic parameters).  PRISM is well suited to regions
+with mountainous terrain, because it incorporates a conceptual
+framework that addresses the spatial scale and pattern of orographic
+precipitation.
+</supplinf>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<rngdates>
+					<begdate>19610101</begdate>
+					<enddate>19901231</enddate>
+				</rngdates>
+				<sngdate><caldate>REQUIRED: The year (and optionally month, or month and day) for which the data set corresponds to the ground.</caldate></sngdate></timeinfo>
+			<current>
+Climatological period from which the point observations were taken.
+</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>
+None planned for the 1961-90 climatological period. However, this data set will most
+likely be updated in 2001 for the new 1971-2000 climatological period.
+</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-106.645645</westbc>
+				<eastbc Sync="TRUE">-93.508125</eastbc>
+				<northbc Sync="TRUE">36.500706</northbc>
+				<southbc Sync="TRUE">25.837378</southbc>
+			</bounding>
+			<lboundng><leftbc Sync="TRUE">-106.645645</leftbc><rightbc Sync="TRUE">-93.508125</rightbc><bottombc Sync="TRUE">25.837378</bottombc><topbc Sync="TRUE">36.500706</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>None</themekt>
+				<themekey>polygon data</themekey>
+				<themekey>precipitation</themekey>
+				<themekey>contour data</themekey>
+			</theme>
+			<place>
+				<placekt>None</placekt>
+				<placekey>Texas, USA</placekey>
+			</place>
+		</keywords>
+		<accconst>
+n/a, no restrictions apply
+</accconst>
+		<useconst>
+Acknowledgement of the following agencies in products derived from these data:
+Natural Resources Conservation Service (NRCS) Water and Climate Center, NRCS
+National Cartography and Geospatial Center (NCGC), PRISM Model, and the Oregon
+Climate Service at Oregon State University.
+</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntperp>
+					<cntper>Greg Johnson</cntper>
+				</cntperp>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>USDA-NRCS, 101 SW Main Street, Suite 1600</address>
+					<city>Portland</city>
+					<state>OR</state>
+					<postal>97204-3224</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>(503) 414-3017</cntvoice>
+				<cntfax>(503) 414-3101</cntfax>
+				<cntemail>gjohnson@wcc.nrcs.usda.gov</cntemail>
+			</cntinfo>
+		</ptcontac>
+		<secinfo>
+			<secsys>None</secsys>
+			<secclass>Unclassified</secclass>
+			<sechandl>None</sechandl>
+		</secinfo>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.1.0.722</native>
+		<natvform Sync="TRUE">Shapefile</natvform></idinfo>
+	<dataqual>
+		<logic>
+Polygon and chain-node topology present. Checks were made
+to ensure that no two adjacent polygons are labelled with the same precipitation value.
+A manual spot check was made of peaks, depressions, and islands.
+</logic>
+		<complete>
+Point estimates of precipitation originated from the following sources:
+National Weather Service Cooperative (COOP) stations, 2) Natural
+Resources Conservation Service (NRCS) SNOTEL, 3) local networks. All COOP
+station data were subjected to quality control checks by the National
+Climatic Data Center (NCDC).
+</complete>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>National Climatic Data Center (NCDC)</origin>
+						<pubdate>1991</pubdate>
+						<title>
+U.S. National 1961-1990 Climate Normals, Climatography of the United
+States No. 81
+</title>
+						<pubinfo>
+							<pubplace>Asheville, NC, USA</pubplace>
+							<publish>National Climatic Data Center (NCDC)</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<typesrc>digital files</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>19610101</begdate>
+							<enddate>19901231</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>ground condition</srccurr>
+				</srctime>
+				<srccitea>CLIM81</srccitea>
+				<srccontr>Location and values of known average monthly and annual precipitation</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Natural Resources Conservation Service</origin>
+						<pubdate>1991</pubdate>
+						<title>
+Cooperative Snow Survey Data of Federal - State - Private
+Cooperative Snow Surveys
+</title>
+						<serinfo>
+							<sername>
+Cooperative Snow Survey Data of Federal - State - Private
+Cooperative Snow Surveys
+</sername>
+							<issue>Annual issue for Western US states</issue>
+						</serinfo>
+						<pubinfo>
+							<pubplace>Portland, OR, USA</pubplace>
+							<publish>Natural Resources Conservation Service, Water and Climate Center</publish>
+						</pubinfo>
+					</citeinfo>
+				</srccite>
+				<typesrc>digital files, paper reports, online</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>19610101</begdate>
+							<enddate>19901231</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>ground condition</srccurr>
+				</srctime>
+				<srccitea>SNOTEL (SNOwpack TELemetry)</srccitea>
+				<srccontr>Location and values of known average monthly and annual precipitation</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Natural Resources Conservation Service, Water and Climate Center</origin>
+						<pubdate>Unpublished material</pubdate>
+						<title>Local Precipitation monitoring networks</title>
+					</citeinfo>
+				</srccite>
+				<typesrc>digital files</typesrc>
+				<srctime>
+					<timeinfo>
+						<rngdates>
+							<begdate>19610101</begdate>
+							<enddate>19901231</enddate>
+						</rngdates>
+					</timeinfo>
+					<srccurr>ground condition</srccurr>
+				</srctime>
+				<srccitea>LOCAL</srccitea>
+				<srccontr>Location and values of known average monthly and annual precipitation</srccontr>
+			</srcinfo>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>Defense Mapping Agency</origin>
+						<pubdate>1985</pubdate>
+						<title>1:250,000-scale Digital Elevation Models (DEM) also known as 1-Degree DEM's</title>
+						<pubinfo>
+							<pubplace>Washington, DC</pubplace>
+							<publish>U.S. Geological Survey</publish>
+						</pubinfo>
+						<onlink>&lt;URL:http://edcwww.cr.usgs.gov/doc/edchome/ndcdb/ndcdb.html&gt;</onlink>
+					</citeinfo>
+				</srccite>
+				<typesrc>digital files</typesrc>
+				<srctime>
+					<timeinfo>
+						<sngdate>
+							<caldate>1985</caldate>
+						</sngdate>
+					</timeinfo>
+					<srccurr>Publication Date</srccurr>
+				</srctime>
+				<srccitea>DEM</srccitea>
+				<srccontr>
+Terrain surface input to PRISM model for estimation of precipitaion
+between known points.
+</srccontr>
+			</srcinfo>
+			<procstep>
+				<procdesc>
+Filter raster data from a resolution of 4 km to 2 km
+using a Gaussian filter
+</procdesc>
+				<procdate>199804</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>Contour 2 km raster data</procdesc>
+				<procdate>199804</procdate>
+			</procstep>
+			<procstep>
+				<procdesc>
+Convert adjacent contour lines to areas or polygons
+using custom software
+</procdesc>
+				<procdate>199804</procdate>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\DOCUME~1\rmitchel\LOCALS~1\Temp\xml1A3.tmp</srcused><date Sync="TRUE">20050721</date><time Sync="TRUE">08033500</time></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">Server=Huan; Service=5151; Database=IS_PG; User=rmitchell; Version=sde.DEFAULT</srcused><date Sync="TRUE">20050721</date><time Sync="TRUE">08403800</time></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf>
+			<sdtsterm Name="TX_PRECIP_01_JAN">
+				<sdtstype Sync="TRUE">G-polygon</sdtstype>
+				<ptvctcnt Sync="TRUE">0</ptvctcnt></sdtsterm>
+			<sdtsterm>
+				<sdtstype>String</sdtstype>
+			</sdtsterm>
+			<sdtsterm>
+				<sdtstype>GT-polygon composed of chains</sdtstype>
+			</sdtsterm>
+			<esriterm Name="TX_PRECIP_01_JAN"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">Polygon</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf>
+	</spdoinfo>
+	<spref>
+		<horizsys>
+			<geograph>
+				<latres Sync="TRUE">0.000000</latres>
+				<longres Sync="TRUE">0.000000</longres>
+				<geogunit Sync="TRUE">Decimal degrees</geogunit>
+			</geograph>
+			<geodetic>
+				<horizdn Sync="TRUE">North American Datum of 1983</horizdn>
+				<ellips Sync="TRUE">Geodetic Reference System 80</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257222</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn></cordsysn></horizsys>
+		<vertdef><altsys><altenc Sync="TRUE">Explicit elevation coordinate included with horizontal coordinates</altenc><altres Sync="TRUE">0.000010</altres></altsys></vertdef></spref>
+	<eainfo>
+		<detailed Name="TX_PRECIP_01_JAN">
+			<enttyp>
+				<enttypl Sync="TRUE">TX_PRECIP_01_JAN</enttypl>
+				<enttypd>
+Polygons representing an area with a fixed value of precipitation.
+The precipitation value is stored as the item RANGE in the attribute table.
+</enttypd>
+				<enttypds>Oregon Climate Service PRISM Project</enttypds>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp>
+			<attr><attrlabl Sync="TRUE">RANGE</attrlabl><attalias Sync="TRUE">RANGE</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">14</atprecis><attscale Sync="TRUE">3</attscale></attr><attr><attrlabl Sync="TRUE">OBJECTID</attrlabl><attalias Sync="TRUE">OBJECTID</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">8</attwidth><atprecis Sync="TRUE">10</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">STATE</attrlabl><attalias Sync="TRUE">STATE</attalias><attrtype Sync="TRUE">Number</attrtype><attwidth Sync="TRUE">9</attwidth></attr><attr><attrlabl Sync="TRUE">SHAPE</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">Shape</attrlabl><attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><attrdef Sync="TRUE">Feature geometry.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Coordinates defining the features.</udom></attrdomv><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">SHAPE_Leng</attrlabl><attalias Sync="TRUE">SHAPE_Leng</attalias><attrtype Sync="TRUE">Float</attrtype><attwidth Sync="TRUE">19</attwidth><atnumdec Sync="TRUE">11</atnumdec></attr><attr><attrlabl Sync="TRUE">SHAPE_Area</attrlabl><attalias Sync="TRUE">SHAPE_Area</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">18</atprecis><attscale Sync="TRUE">11</attscale><attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Positive real numbers that are automatically generated.</udom></attrdomv></attr></detailed>
+		<detailed>
+			<enttyp>
+				<enttypl>CONTOUR</enttypl>
+				<enttypd>
+Contours representing lines of equal precipitation.
+The precipitation value is stored as the item CONTOUR in the attribute table.
+</enttypd>
+				<enttypds>Oregon Climate Service PRISM Project</enttypds>
+			</enttyp>
+			<attr>
+				<attrlabl>precipitation polygons</attrlabl>
+				<attrdef>average precipitation polygons</attrdef>
+				<attrdefs>
+Daly, C., R.P. Neilson, and D.L. Phillips, 1994: A Statistical-Topographic
+Model for Mapping Climatological Precipitation over Mountainous Terrain. J.
+Appl. Meteor., 33,140-158.
+</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>0</rdommin>
+						<rdommax>600</rdommax>
+						<attrunit>inches</attrunit>
+						<attrmres>2 inches</attrmres>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl>precipitation contours</attrlabl>
+				<attrdef>average precipitation contours</attrdef>
+				<attrdefs>
+Daly, C., R.P. Neilson, and D.L. Phillips, 1994: A Statistical-Topographic
+Model for Mapping Climatological Precipitation over Mountainous Terrain. J.
+Appl. Meteor., 33,140-158.
+</attrdefs>
+				<attrdomv>
+					<rdom>
+						<rdommin>0</rdommin>
+						<rdommax>600</rdommax>
+						<attrunit>inches</attrunit>
+						<attrmres>2 inches</attrmres>
+					</rdom>
+				</attrdomv>
+			</attr>
+			<attr><atnumdec Sync="TRUE">11</atnumdec></attr><attr><atnumdec/></attr><attr><atnumdec/></attr><attr><atnumdec/></attr></detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntperp>
+					<cntper>National Cartography and Geospatial Center (NCGC)</cntper>
+				</cntperp>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>Fort Worth Federal Center, Building 23, PO Box 6567</address>
+					<city>Fort Worth</city>
+					<state>TX</state>
+					<postal>76115</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>(800) 672-5559</cntvoice>
+				<cntfax>(817) 509-3469</cntfax>
+				<cntemail>nrcs_data@ftw.nrcs.usda.gov</cntemail>
+			</cntinfo>
+		</distrib>
+		<distliab>
+This Compact Disc-Read Only Memory (CD-ROM) publication was prepared
+by an agency of the United States Government.  Neither the United
+States Government nor any agency thereof, nor any of their employees,
+make any warranty, expressed or implied, or assumes any legal
+liability or responsibility for the accuracy, completeness,  or
+misuse of the data, or for damage, transmission of viruses or computer
+contamination through the distribution of these data sets or for the
+usefulness of any information, apparatus, product, or process
+disclosed in this report, or represents that its use would not
+infringe privately owned rights.  Reference therein to any specific
+commercial product, process, or service by trade name, trademark,
+manufacturer, or otherwise does not necessarily constitute or imply
+its endorsement, recommendation, or favoring by the United States
+Government or any agency thereof.  Any views and opinions of authors
+expressed herein do not necessarily state or reflect those of the
+United States Government or any agency thereof.
+
+The U.S. Department of Agriculture will warrant the delivery of this
+product in computer readable format, and will offer appropriate adjustment
+of credit when the product is determined unreadable by correctly
+adjusted computer input peripherals, or when the physical medium is
+delivered in damaged condition. Request for adjustment of credit
+must be made within 90 days from the date of this shipment from the
+ordering site.
+
+The U.S. Department of Agriculture prohibits discrimination in its programs
+on the basis of race, color, national origin, sex, religion, age, disability,
+political beliefs, and marital or familial status. (Not all prohibited bases
+apply to all programs.)
+</distliab>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<formname>ARC/INFO coverage</formname>
+					<transize Sync="TRUE">0.000</transize><dssize Sync="TRUE">0.000</dssize></digtinfo>
+				<digtopt>
+					<offoptn>
+						<offmedia>CD-ROM</offmedia>
+						<recfmt>ISO 9660 Level 1</recfmt>
+					</offoptn>
+				</digtopt>
+			</digform>
+			<fees>
+The charge is $50 for a CD-ROM that contains one or more data sets. A data set
+is one state area which includes spatial data with attributes.
+</fees>
+			<ordering>
+Digital data may be obtained by calling or writing to organizations
+listed under Distributor, Contact_Person_Primary or NRCS personnel can contact their Climate
+Data Liaison (CDL).
+</ordering>
+			<turnarnd>10 working days</turnarnd>
+		</stdorder>
+		<techpreq>
+Geographic data are intended for use in a Geographic Information
+System (GIS). In addition, this publication contains menu and display programs that operate 16 Mb
+RAM (absolute minimum), CD-ROM drive with ISO 9660 software driver, Graphics card (640x480
+pixels with 256 colors, prefer 1024x1024 with 65,535 colors), Color monitor, mouse, and
+keyboard.
+</techpreq>
+		<resdesc Sync="TRUE">Downloadable Data</resdesc></distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20050721</metd>
+		<metc>
+			<cntinfo>
+				<cntperp>
+					<cntper>Tye Parzybok</cntper>
+				</cntperp>
+				<cntaddr>
+					<addrtype>mailing address</addrtype>
+					<address>Strand Ag Hall 326, Oregon Climate Service, Oregon State University</address>
+					<city>Corvallis</city>
+					<state>OR</state>
+					<postal>97331-2209</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>(541) 737-5705</cntvoice>
+				<cntfax>(541) 737-5710</cntfax>
+				<cntemail>parzy@oce.orst.edu</cntemail>
+				<cntorgp><cntper>REQUIRED: The person responsible for the metadata information.</cntper><cntorg>REQUIRED: The organization responsible for the metadata information.</cntorg></cntorgp></cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<metsi>
+			<metscs>None</metscs>
+			<metsc>Unclassified</metsc>
+			<metshd>None</metshd>
+		</metsi>
+		<langmeta Sync="TRUE">en</langmeta><mettc Sync="TRUE">local time</mettc><metextns><onlink Sync="TRUE">http://www.esri.com/metadata/esriprof80.html</onlink><metprof Sync="TRUE">ESRI Metadata Profile</metprof></metextns></metainfo>
+	<Esri><CreaDate>20130126</CreaDate><CreaTime>16582200</CreaTime><SyncOnce>FALSE</SyncOnce><SyncDate>20050721</SyncDate><SyncTime>08462800</SyncTime><ModDate>20050721</ModDate><ModTime>08462800</ModTime><DataProperties><lineage><Process ToolSource="C:\Program Files\ArcGIS\ArcToolbox\Toolboxes\Data Management Tools.tbx\CopyFeatures" Date="20050721" Time="084629">CopyFeatures \\Samwise\Mitchell\Working\Precip\pgdb\TX_PRECIP.mdb\PRECIPITATION\TX_PRECIP_01_JAN \\Samwise\Mitchell\Working\Precip\Shp\TX_PRECIP_01_JAN.shp # 0 0 0</Process></lineage><itemProps><itemLocation><linkage Sync="TRUE">file://\\KRISTINA-PC\Users\Kristina\Desktop\spatialAnalysis\Data\TX_PRECIP_01_JAN</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation></itemProps><copyHistory><copy source="C:\Users\Kristina\Desktop\spatialAnalysis\tx_precip\TX_PRECIP_01_JAN" dest="\\KRISTINA-PC\Users\Kristina\Desktop\spatialAnalysis\Data\TX_PRECIP_01_JAN" date="20130126" time="16582200"></copy></copyHistory></DataProperties></Esri><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.1.0.722</envirDesc><dataLang><languageCode Sync="TRUE" value="en"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">TX_PRECIP_01_JAN</resTitle><presForm><PresFormCd Sync="TRUE" value="005"></PresFormCd></presForm></idCitation><spatRpType><SpatRepTypCd Sync="TRUE" value="001"></SpatRepTypCd></spatRpType><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">-106.645645</westBL><eastBL Sync="TRUE">-93.508125</eastBL><northBL Sync="TRUE">36.500706</northBL><southBL Sync="TRUE">25.837378</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-106.645645</westBL><eastBL Sync="TRUE">-93.508125</eastBL><northBL Sync="TRUE">36.500706</northBL><southBL Sync="TRUE">25.837378</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox></dataIdInfo><mdLang><languageCode Sync="TRUE" value="en"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><distInfo><distributor><distorTran><onLineSrc><orDesc Sync="TRUE">002</orDesc><linkage Sync="TRUE">file://\\Samwise\Mitchell\Working\Precip\Shp\TX_PRECIP_01_JAN.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></onLineSrc><transSize Sync="TRUE">0.000</transSize></distorTran><distorFormat><formatName Sync="TRUE">Shapefile</formatName></distorFormat></distributor></distInfo><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE">GCS_North_American_1983</identCode></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="TX_PRECIP_01_JAN"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="001"></GeoObjTypCd></geoObjTyp><geoObjCnt Sync="TRUE">0</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo><mdDateSt Sync="TRUE">20050721</mdDateSt></metadata>

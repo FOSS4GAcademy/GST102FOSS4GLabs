@@ -41,7 +41,7 @@ lacking, or woefully out of date.  Therefore, with the support of the Department
 of Labor, we decided to create the world's first complete FOSS4G curriculum available
 for everyone to use, for free.
 
-*We do not want this curriculum to die!*  Therefore, the [ICA-OSGeo][1] [Lab at
+*We do not want this curriculum to die!*  Therefore, the [ICA-OSGeo][1] [Spatial {Query} Lab at
 Texas A&M University - Corpus Christi][2] is spearheading the continued development
 and updating of these labs.
 
@@ -56,14 +56,12 @@ Kurt Menke, GISP
 Bird's Eye View GIS
 
 Original Lab Content Author:
-Richard Smith, Ph.D.  
+Richard Smith, Ph.D., GISP
 Texas A&M University - Corpus Christi
 
-Copyright © National Information Security, Geospatial Technologies Consortium (NISGTC)
+The development of the original lab documents were funded by the Department of Labor (DOL) Trade Adjustment Assistance Community College and Career Training (TAACCCT) Grant No.  TC-22525-11-60-A-48; The National Information Security, Geospatial Technologies Consortium (NISGTC) is an entity of Collin College of Texas, Bellevue College of Washington, Bunker Hill Community College of Massachusetts, Del Mar College of Texas, Moraine Valley Community College of Illinois, Rio Salado College of Arizona, and Salt Lake Community College of Utah.  This work is licensed under the Creative Commons Attribution 3.0 Unported License.  To view a copy of this license, visit <http://creativecommons.org/licenses/by/3.0/> or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.  
 
-The development of these lab documents were funded by the Department of Labor (DOL) Trade Adjustment Assistance Community College and Career Training (TAACCCT) Grant No.  TC-22525-11-60-A-48; The National Information Security, Geospatial Technologies Consortium (NISGTC) is an entity of Collin College of Texas, Bellevue College of Washington, Bunker Hill Community College of Massachusetts, Del Mar College of Texas, Moraine Valley Community College of Illinois, Rio Salado College of Arizona, and Salt Lake Community College of Utah.  This work is licensed under the Creative Commons Attribution 3.0 Unported License.  To view a copy of this license, visit <http://creativecommons.org/licenses/by/3.0/> or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.  
-
-These documents were modified from their original form by Kurt Menke and continues to be modified and improved by generous public contributions.
+These documents continue to be modified and improved by generous public contributions.
 
 ### Curriculum Document Format
 All curriculum is written in [Markdown][3].  Markdown was chosen for these reasons:
@@ -89,10 +87,10 @@ An attribution block is next as we always want to give proper attribution.
 + This Markdown document contains the attribution block: 
 [Attribution Block for Lab Documents.md][5].
 
-An Introduction, Objective, and Video Statement are listed next.
+An Introduction and Objective are listed next.
 
-+ These three sections are always size Header 3 `### Introduction` and are always
-sections 1, 2, and 3 respectively.
++ These two sections are always size Header 3 `### Introduction` and are always
+sections 1 and 2, respectively.
 
 The lab Tasks (logical blocks of content) are next.
 
@@ -112,7 +110,7 @@ refer to figure below).  *All figures should be placed within the 'figures' fold
 in the same directory as the Markdown document.
 
 [1]: http://www.geoforall.org/
-[2]: http://www.spatialquerylab.com
+[2]: http://spatialquerylab.com/projects/open-source-gis/
 [3]: http://daringfireball.net/projects/markdown/syntax
 [4]: http://johnmacfarlane.net/pandoc/
 [5]: Attribution_Block_for_Lab_Documents.md

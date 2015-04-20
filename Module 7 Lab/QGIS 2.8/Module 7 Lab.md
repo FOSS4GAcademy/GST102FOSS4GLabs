@@ -2,7 +2,7 @@
 ## Lab 7 - Raster Data Analysis - Working with Topographic Data
 ### Objective – Learn the Basics of Terrain Analysis
 
-Document Version: 4/8/2015
+Document Version: 4/19/2015
 
 **FOSS4G Lab Author:**
 Kurt Menke, GISP  
@@ -43,7 +43,7 @@ In this task, you will use a digital elevation model to create several terrain r
 
 This raster layer has elevation values for each cell. This type of data is referred to as a digital elevation model, or DEM, for short. This particular dataset covers the Sandia Mountains on the east side of Albuquerque, New Mexico (shown in figure below). The light areas have the highest elevation and the dark areas the lowest elevation.
 
-![Digital Elevation Model (DEM) QGIS Desktop](figures/Digital_Elevation_Model_(DEM)_QGIS_Desktop.png "Digital Elevation Model (DEM) QGIS Desktop") 
+![Digital Elevation Model (DEM) in QGIS Desktop](figures/Digital_Elevation_Model_(DEM)_QGIS_Desktop.png "Digital Elevation Model (DEM) in QGIS Desktop") 
 
 4. Let's explore the properties of the raster dataset.
 
@@ -184,14 +184,14 @@ Now that you have created the slope and aspect data you will reclassify them int
 
 5. Now the best habitat in terms of slope has a value of 3 and the worst a value of 1 (shown in figure below).
 
-![Reclassified_and_Styled_Slope](figures/Reclassified_and_Styled_Slope.png "Reclassified_and_Styled_Slope")
+![Reclassified and Styled Slope](figures/Reclassified_and_Styled_Slope.png "Reclassified and Styled Slope")
 
 Now you will recode the Aspect data in the same fashion. This plant prefers west facing slopes. Hence the west facing slopes will be set to 3, the north and south are the next best location so set them to 2, and the eastern slopes can be set 1. Remember that the values of the aspect raster are compass bearings or azimuths (270 is due west, 0 is north, 180 is south and 90 is east). You will classify the aspect data into eight cardinal directions. 
 
 6. Open Notepad and create a text file that looks like the figure below.  Save the text file to your MyData folder and name it Aspect_Recode_Rules.txt.
 7. Close the text editor.
 
-![Aspect_Recode_Rules](figures/Aspect_Recode_Rules.png "Aspect_Recode_Rules") 
+![Aspect Recode Rules](figures/Aspect_Recode_Rules.png "Aspect Recode Rules") 
 
 7. In the Processing Toolbox, expand the GRASS commands toolset | Raster (r.*) | r.recode - Recodes categorical raster maps.
 8. Set the following tool options (shown in figure below):
@@ -204,7 +204,7 @@ Now you will recode the Aspect data in the same fashion. This plant prefers west
 
 	d. Click Run
 
-![r.recode_Aspect_Parameters](figures/r_recode_Aspect_Parameters.png "r.recode_Aspect_Parameters")
+![r.recode Aspect Parameters](figures/r_recode_Aspect_Parameters.png "r.recode Aspect Parameters")
 
 8. Rename the newly reclassified Aspect layer from Output raster layer to Aspect Reclassified.
 9. Save your QGIS project.
@@ -243,7 +243,7 @@ In this lab, you were exposed to terrain analysis, creating derived datasets fro
 
 ### 4 Discussion Questions
 
-1. What other real world applications of terrain analysis can you think of? Describe.
+1. What other real world applications of terrain analysis can you think of?
 2. How does this suitability analysis compare to the site selection analysis done with the vector data model in Lab 5?
 3. What other linear networks could this apply to other than roads?
 

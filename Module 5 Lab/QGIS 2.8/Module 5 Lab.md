@@ -2,7 +2,7 @@
 ## Lab 5 - Vector Data Analysis - Creating a Site Selection Model
 ### Objective – Using the QGIS Desktop Graphical Modeler to Perform a Site Selection Analysis
 
-Document Version: 4/6/2015
+Document Version: 4/19/2015
 
 **FOSS4G Lab Author:**
 Kurt Menke, GISP  
@@ -56,12 +56,12 @@ Clearly the data layers cover a variety of spatial extents. One likely step will
 
 Since they are all in the same coordinate reference system no re-projecting will be required. 
 
-When building a site selection model, you are usually presented with a scenario. The scenario has parameters, which you will have to address to find the solution. The scenario below describes the parameters for the site selection you will do for this lab. The best method to solve a scenario like the one below is to extract the parameters from the description and write them down into verbal descriptions. Then from your descriptions you can transcribe them into GIS operations: buffer, intersect, =, <> etc..  
+When building a site selection model, you are usually presented with a scenario. The scenario has parameters, which you will have to address to find the solution. The scenario below describes the parameters for the site selection you will do for this lab. The best method to solve a scenario like the one below is to extract the parameters from the description and write them down into verbal descriptions. Then from your descriptions you can transcribe them into GIS operations: buffer, intersect, =, <>, etc.
 
 **Scenario**
 A company is looking to lease a helipad at an airport for their company helicopter. This company is situated in Nueces County, Texas and wants the helipad to be within 3 miles of the Corpus Christi city limits, but not in the city limits. The pilots request that the airport or heliport be within a half mile of any source of water. It must also be within a mile from a County road.  As you have some knowledge of GIS you are being asked to find the best solution. 
 
-7. Complete the table below. The first two entries in Description and Extent have been entered for you. Study the data layers in QGIS Desktop and complete the table. At that point you will have a better understanding of what you have to work with.
+7. Complete the descriptions below. The first two entries in Description and Extent have been entered for you. Study the data layers in QGIS Desktop and complete the table. At that point you will have a better understanding of what you have to work with.
 
 **Data Layer  --  Description and Extent**
 
@@ -173,7 +173,7 @@ The Counties lyr parameter will now appear in the design window (shown in figure
 
 ![Extract by Attribute Settings](figures/Extract_by_Attribute_Settings.png "Extract by Attribute Settings")
 
-The first complete algorithm has been added! You can drag the parameter boxes to arrange them as you would like and the connecting arrows will follow (example in figure below). You can also click on the Edit button ![Edit button](figures/Edit_button.png "Edit button")  on any model parameter at any time. This will reopen the algorithm window or model parameter window From there you can make changes if necessary.
+The first complete algorithm has been added! You can drag the parameter boxes to arrange them as you would like and the connecting arrows will follow (example in figure below). You can also click on the Edit button ![Edit button](figures/Edit_button.png "Edit button")  on any model parameter at any time. This will reopen the algorithm window or model parameter window, from there you can make changes if necessary.
 
 ![Model with Nueces County Created by Extract by Attribute](figures/Model_with_Nueces_County_Created_by_Extract_by_Attribute.png "Model with Nueces County Created by Extract by Attribute")
 
@@ -185,7 +185,7 @@ The first complete algorithm has been added! You can drag the parameter boxes to
 Your model is obviously not yet complete. However, it is already a geoprocessing tool that you can open, set parameters for, and run. Let's try the model out to see what happens with its current configuration.
 
 15. Double-click on the Helipad Site Selection model in the Processing Toolbox to open the model as a tool.
-16. Set Counties lyr to Counties, CountyName attr to COUNTY and keep Nueces County as a temporary file for now (Don’t fill it in!) (reference figure below).
+16. Set Counties lyr to Counties, CountyName attr to COUNTY and keep Nueces County as a temporary file for now (Do not fill it in!) (reference figure below).
 
 ![Helipad Site Selection](figures/Helipad_Site_Selection.png "Helipad Site Selection")
 
@@ -198,7 +198,7 @@ Now that your basic model is set up, you will add additional functionality to it
 
 1. Open QGIS Desktop and open Lab 5.qgs if it is not already.
 2. From the menu bar now choose Processing | Graphical Modeler.
-3. Once the Graphical Modeler opens, click the Open Model ![Open Model](figures/Open_Model.png "Open Model")  button and open the Helipad Site Selection model (if it isn't already open). 
+3. Once the Graphical Modeler opens, click the Open Model ![Open Model](figures/Open_Model.png "Open Model")  button and open the Helipad Site Selection model (if it is not already open). 
 
 3. Now you will add a parameter for Airports. Click the Vector layer input parameter and fill out the Parameter definition as in the figure below.
 
@@ -245,7 +245,7 @@ Now you will work with the CityBoundaries. This is the most involved parameter b
 
 	c. Selection attribute = CityBoundaries attr
 
-	d. Operator = =
+	d. Select the = Operator
 
 	e. Value = Corpus Christi
 
@@ -396,7 +396,7 @@ You can combine the water buffer, county roads buffer and the 3 mile ring around
 
 	c. Intersection<OutputVector> - leave blank
 
-	d. Since we need to Intersect more than two layers, we need to set two parent algorithms. Click the ellispsi button for the Parent algorithsm parameter. When the Multiple Selection window opens check the bottom two Fixed distance buffer representing the roads and water buffers (reference figure below).
+	d. Since we need to Intersect more than two layers, we need to set two parent algorithms. Click the ellispsis button for the Parent algorithms parameter. When the Multiple Selection window opens check the bottom two Fixed distance buffer representing the roads and water buffers (reference figure below).
 
 ![Multiple Selection](figures/Multiple_Selection.png "Multiple Selection")
 
@@ -413,18 +413,18 @@ The model will now look like the figure below with the Intersect algorithm takin
 
 	b. Clip layer = 'Intersection' from algorithm 'Intersection'
 
-	c. Intersection<OutputVector> - Final Solution
+	c. Clipped <OutputVector> - Final Solution
 
 The final model should resemble the figure below.
 
 ![Final Model](figures/Final_Model.png "Final Model")
 
-*Note on the Final Clip Algorithm*: At this time, there is a new bug that may prevent the final clip from working in the model. The error will be reported in the Log tab on the final step in red and it will read: *Error executing algorithm 9 [Errno 9] Bad file descriptor See log for more details.* This bug is not present on all installations and all platforms. If you don’t get this you can ignore this note. However, if you receive this error, simply end the model with the Intersection, and save out the output of the Intersection to your MyData folder. You can then perform the final clip manually.
+*Note on the Final Clip Algorithm*: At this time, there is a new bug that may prevent the final clip from working in the model. The error will be reported in the Log tab on the final step in red and it will read: *Error executing algorithm 9 [Errno 9] Bad file descriptor See log for more details.* This bug is not present on all installations and all platforms. If you do not get this you can ignore this note. However, if you receive this error, simply end the model with the Intersection, and save out the output of the Intersection to your MyData folder. You can then perform the final clip manually.
 
 7. Save the Model and Close it.
 8. Congratulations! You have created your first geoprocessing model!
 9. From the Toolbox panel, expand Models | GST 102. 
-10.	Double click on Helipad Site Selection. Fill out all the parameters as shown in the figure below. Click Run when ready.
+10.	Double-click on Helipad Site Selection. Fill out all the parameters as shown in the figure below. Click Run when ready.
 
 ![Helipad Site Selection Model Inputs](figures/Helipad_Site_Selection_Model_Inputs.png "Helipad Site Selection Model Inputs")
 

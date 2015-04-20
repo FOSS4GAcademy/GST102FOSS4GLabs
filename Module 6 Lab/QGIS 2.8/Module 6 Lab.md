@@ -39,7 +39,7 @@ In this task, you will use the Road Graph plugin to determine the shortest dista
 
 1. Open QGIS Desktop.
 3. Add the MTA_DPT_SpeedLimits shapefile to QGIS Desktop.
-4. Right-click on the layer and choose Set project CRS from layer from the context menu.
+4. Right-click on the layer and choose Set Project CRS from layer from the context menu.
 
 ![Street Layer in QGIS Desktop](figures/Street_Layer_in_QGIS_Desktop.png "Street Layer in QGIS Desktop")
 
@@ -93,7 +93,7 @@ Your map should resemble the figure below.You can now distinguish the major arte
 
 14. To save the shortest path click the Export button.
 15. Choose New temporary layer as the Select destination layer. Click OK. The shortest path will now appear in your Layers panel and on the map canvas. 
-15.	To make this layer permanent right click on it and choose Save as…  Save the data to a shapefile in the Lab 6 Data folder named ShortestPath.shp (see figure below),
+15. To make this layer permanent right-click on it and choose Save As…  Save the data to a shapefile in the Lab 6 Data folder named ShortestPath.shp (see figure below),
 
 ![Saving the Temporary Shortest Path Layer to a Shapefile](figures/Saving_the_Temporary_Shortest_Path_Layer_to_a_Shapefile.png "Saving the Temporary Shortest Path Layer to a Shapefile")
 
@@ -126,7 +126,7 @@ The GRASS plugin is a core QGIS plugin. This means it is already installed and a
 
 Enabling the GRASS plugin turns on a new toolbar (shown in figure below). If the toolbar does not appear, click View | Toolbars | GRASS.
 
-![New toolbar](figures/new_toolbar.png "New toolbar")
+![New Toolbar](figures/new_toolbar.png "New Toolbar")
 
 The data is already set up for you in this QGIS Desktop project. The following is simply an explanation to get you oriented to the GRASS data structure and show you how the GRASS data was loaded in to QGIS Desktop. Remember GRASS data is stored in a GRASS database, which again is simply a folder. Inside the database will be folder(s) called Locations and inside a Location will be folder(s) called Mapsets.
 
@@ -186,7 +186,7 @@ This tool will create a linear network of San Francisco streets and attach nodes
 
 While running the Output tab will be visible (shown in figure below).
 
-![v.net_Tool_Successfully_Finished](figures/v_net_Tool_Successfully_Finished.png "v.net_Tool_Successfully_Finished")
+![v.net Tool Successfully Finished](figures/v_net_Tool_Successfully_Finished.png "v.net Tool Successfully Finished")
 
 11. Click the View output button to add the network dataset to QGIS.
 12. For now, leave the GRASS tools window open. You may want to move it to the side so you can see the map.
@@ -205,7 +205,7 @@ In addition to the linear network, this operation produced nodes for each police
 Now that the network dataset is constructed, you will identify the road territory that each police station should serve.
 
 17. In the GRASS Tools window switch back the Modules Tree tab.
-18. Click on v.net.alloc – Allocate Network tool. The tool will open in yet another tab.
+18. Click on v.net.alloc – Allocate network tool. The tool will open in yet another tab.
 18. Fill out the tool form as described below and as seen in the figure below.
 	
 	a. Input arcs: SF_Network ( SF_Network@MyData 1 line)

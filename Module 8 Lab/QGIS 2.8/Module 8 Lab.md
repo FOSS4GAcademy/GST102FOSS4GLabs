@@ -29,7 +29,7 @@ This lab includes the following tasks:
 + Task 2 Raster to Vector Conversion
 + Task 3 Vector to Raster Conversion
 
-### 2 Objective: Learn the Basics of Terrain Analysis
+### 2 Objective: Learn Density Analysis Methods
 
 The objective of this lab is to learn about the density analysis methods and look at the conversion between the raster and vector data models. 
 
@@ -37,7 +37,9 @@ The objective of this lab is to learn about the density analysis methods and loo
 
 Point density analysis can be used to show where there is a concentration of data points. In this task, you will be using a core QGIS plugin called Heatmap, which generates point density surfaces. 
 
-Radius (aka neighborhood) – With the Heatmap tool you can define the search radius. The tool will use this distance when searching for neighboring points. A given pixel will receive higher values when more points are found within that search radius, and lower values when fewer points are found. Therefore, you can get very different results by changing the radius value.  
+Radius (aka neighborhood) – With the Heatmap tool you can define the search radius. The tool will use this distance when searching for neighboring points. A given pixel will receive higher values when more points are found within that search radius, and lower values when fewer points are found. Therefore, you can get very different results by changing the radius value.
+
+**Note**: *In QGIS version 2.8, a bug was introduced that causes the Heatmap tool to not work correctly.* This problem has been solved in the development version of QGIS 2.9, which will be released as QGIS 2.10. In the meantime, in the Lab 8 Data/Task 1 Raster Files folder, both the TownDensity.tif and TownPopDensity.tif have been created and placed for you to use. If you choose to use these files, read down until the TownPopDensity.tif is created and continue from there.
 
 1. Open QGIS Desktop.
 3. Use the Add vector data button to add the Texas.shp and Place_names.shp from the Lab 8 Data folder.
@@ -162,7 +164,7 @@ Now that the data are in polygon form, it is straightforward to calculate their 
 
 12. Right click on the PopulationCenters polygon layer in the Layers panel and choose Save As…
 
-	a.Save the layer as PopulationCenters_albers.shp
+	a. Save the layer as PopulationCenters_albers.shp
 
 	b. Click the Browse button to open the Coordinate Reference System Selector. Type ‘Texas’ into the Filter window.
 

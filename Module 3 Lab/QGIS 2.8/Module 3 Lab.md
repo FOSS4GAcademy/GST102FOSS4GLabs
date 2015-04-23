@@ -169,7 +169,7 @@ Using select by location, you can conduct spatial queries. In this case, we can 
 
 ![Affected Parcels Selected](figures/Affected_Parcels_Selected.png "Affected Parcels Selected")
 
-From here, you could save out the selected parcels as a new shapefile. To do this you would right-click on the parcel layer and choose Save selection as… You could also open the parcel attribute table and Show Selected Features to examine the attributes of those affected parcels. 
+From here, you could save out the selected parcels as a new shapefile. To do this you would right-click on the parcel layer and choose Save As… then check Save only selected features. You could also open the parcel attribute table and Show Selected Features to examine the attributes of those affected parcels. 
 
 5. Finally you will examine the total value of the affected parcels. From the menu bar choose Vector | Analysis Tools | Basic Statistics.
  

@@ -2,7 +2,7 @@
 ## Lab 8 - Raster Data Analysis - Density Surfaces
 ### Objective – Learn Density Analysis Methods
 
-Document Version: 4/21/2015
+Document Version: 4/26/2015
 
 **FOSS4G Lab Author:**
 Kurt Menke, GISP  
@@ -60,15 +60,15 @@ Radius (aka neighborhood) – With the Heatmap tool you can define the search ra
 
 	e. Check Add generated file to map
 
-	f. Click OK to run the Heatmap tool
+	f. Click OK to run the Heatmap Plugin
 
 ![Heatmap Parameters](figures/Heatmap_Parameters.png "Heatmap Parameters")
 
-7. Restyle the Texas layer with a Fill style of Transparent fill and a thick yellow Border.  Drag the Texas layer to the top of the Layer panel (figure below).
+7. Restyle the Texas layer with a Fill style of Transparent fill and a thick yellow border.  Drag the Texas layer to the top of the Layer panel (figure below).
 
 ![Heatmap from Place Names](figures/Heatmap_from_Place_Names.png "Heatmap from Place Names")
 
-8. Now you will run the tool again but you will weight the town points by their population. Run the Heatmap tool again. This time name the Output TownPopDensity.tif. 
+8. Now you will run the plugin again but you will weight the town points by their population. Run the Heatmap Plugin again. This time name the Output raster TownPopDensity.tif. 
 9. Check the Advanced box and check Use weight from field.
 10. Choose POPULATION as the weight field. This will create a heat map based on the population values of each town (figure below). Click OK to execute the tool.
 
@@ -113,7 +113,7 @@ This is a more pleasing rendering and is very useful for a visual interpretation
 
 4. From the menu bar choose Raster | Raster Calculator.
 
-	a. Double click on “TownPopDensity@1”
+	a. Double-click on “TownPopDensity@1”
 
 	b. Click on the > operator
 
@@ -148,7 +148,7 @@ Since the output represents all the pixels in the raster you need to eliminate t
 
 8. Right-click on the PopulationCenters polygon layer Layers panel and choose Toggle editing from the context menu.
 9. Open the attribute table for the layer. Click the Select features using an expression button ![expression button](figures/expression_button.png "expression button") .
-10. Expand Field and Values. Double click on DN to place it in the Expression window. Click the = operator. Now click the all unique button and double click on the 0 value to place it in the expression. (figure below)
+10. Expand Field and Values. Double-click on DN to place it in the Expression window. Click the = operator. Now click the all unique button and double-click on the 0 value to place it in the expression. (figure below)
 
 ![Select by Expression](figures/Select_by_Expression.png "Select by Expression")
 
@@ -160,13 +160,13 @@ The population centers are now a polygon layer you can use in a final map, or pe
 
 ![Population Centers](figures/Population_Centers.png "Population Centers")
 
-Now that the data are in polygon form, it is straightforward to calculate their acreage. QGIS calculates areas in the units of the coordinate reference system, therefore the layer needs to be in a Cartesian coordinate system with units of feet or meters. Currently it is in a Geographic coordinate system with values of decimal degrees. You will save the layer to a new coordinate reference system. Then you can calculate the square meters of the polygons and convert those to acres or square miles etc. 
+Now that the data are in polygon form, it is straightforward to calculate their acreage. QGIS calculates areas in the units of the coordinate reference system, therefore the layer needs to be in a Cartesian coordinate system with units of feet or meters. Currently it is in a Geographic coordinate system with values of decimal degrees. You will save the layer to a new coordinate reference system. Then you can calculate the square meters of the polygons and convert those to acres or square miles, etc. 
 
-12. Right click on the PopulationCenters polygon layer in the Layers panel and choose Save As…
+12. Right-click on the PopulationCenters polygon layer in the Layers panel and choose Save As…
 
 	a. Save the layer as PopulationCenters_albers.shp
 
-	b. Click the Browse button to open the Coordinate Reference System Selector. Type ‘Texas’ into the Filter window.
+	b. Click the Select CRS button to open the Coordinate Reference System Selector. Type ‘Texas’ into the Filter window.
 
 	c. Choose the NAD/83 Texas Centric Albers Equal Area EPSG:3083 CRS. Click OK.
 
@@ -190,7 +190,7 @@ Now that the data are in polygon form, it is straightforward to calculate their 
 
 	b. Choose Acreage as that field
 
-	c. Expand the Geometry Function list and double click $area
+	c. Expand the Geometry Function list and double-click $area
 
 	d. Click the * operator
 
@@ -212,7 +212,7 @@ It can also be very useful to have data represented in the raster data model. Ra
 
 1. Open QGIS Desktop and open Lab 8 Data/Lab8.qgs.
 2. Add the Nueces_Roads.shp to QGIS Desktop.
-3. Right click on the Nueces Roads layer in the Layers panel and choose Zoom to layer (figure below).
+3. Right-click on the Nueces Roads layer in the Layers panel and choose Zoom to layer (figure below).
 
 ![Nueces Roads in QGIS Desktop](figures/Nueces_Roads_in_QGIS_Desktop.png "Nueces Roads in QGIS Desktop")
 
@@ -236,7 +236,7 @@ It can also be very useful to have data represented in the raster data model. Ra
 
 ### 3 Conclusion
 
-In this lab, you learned how to use the Heatmap plugin to generate point density rasters based off of both point densities and attribute values (population). Density analyses are often used to analyze data related to crimes, or the amount of fast food stores in an area. The output provides a nice overview of how close the points are, and you can choose our own variables to weight the output. Finally, using the conversion tools we can convert between raster and vector. Having data in raster form allows you to perform raster algebra operations via the Raster Calculator. Having the data in vector form allows for geometries to be easily calculated (acreage), and for more sophisticated cartographic options (border and fill).  
+In this lab, you learned how to use the Heatmap Plugin to generate point density rasters based off of both point densities and attribute values (population). Density analyses are often used to analyze data related to crimes, or the amount of fast food stores in an area. The output provides a nice overview of how close the points are, and you can choose our own variables to weight the output. Finally, using the conversion tools we can convert between raster and vector. Having data in raster form allows you to perform raster algebra operations via the Raster Calculator. Having the data in vector form allows for geometries to be easily calculated (acreage), and for more sophisticated cartographic options (border and fill).  
 
 ### 4 Discussion Questions
 

@@ -2,7 +2,7 @@
 ## Lab 8 - Raster Data Analysis - Density Surfaces
 ### Objective – Learn Density Analysis Methods
 
-Document Version: 4/8/2015
+Document Version: 4/26/2015
 
 **FOSS4G Lab Author:**
 Kurt Menke, GISP  
@@ -29,7 +29,7 @@ This lab includes the following tasks:
 + Task 2 Raster to Vector Conversion
 + Task 3 Vector to Raster Conversion
 
-### 2 Objective: Learn the Basics of Terrain Analysis
+### 2 Objective: Learn Density Analysis Methods
 
 The objective of this lab is to learn about the density analysis methods and look at the conversion between the raster and vector data models. 
 
@@ -37,7 +37,9 @@ The objective of this lab is to learn about the density analysis methods and loo
 
 Point density analysis can be used to show where there is a concentration of data points. In this task, you will be using a core QGIS plugin called Heatmap, which generates point density surfaces. 
 
-Radius (aka neighborhood) – With the Heatmap tool you can define the search radius. The tool will use this distance when searching for neighboring points. A given pixel will receive higher values when more points are found within that search radius, and lower values when fewer points are found. Therefore, you can get very different results by changing the radius value.  
+Radius (aka neighborhood) – With the Heatmap tool you can define the search radius. The tool will use this distance when searching for neighboring points. A given pixel will receive higher values when more points are found within that search radius, and lower values when fewer points are found. Therefore, you can get very different results by changing the radius value.
+
+**Note**: *In QGIS version 2.8, a bug was introduced that causes the Heatmap tool to not work correctly.* This problem has been solved in the development version of QGIS 2.9, which will be released as QGIS 2.10. In the meantime, in the Lab 8 Data/Task 1 Raster Files folder, both the TownDensity.tif and TownPopDensity.tif have been created and placed for you to use. If you choose to use these files, read down until the TownPopDensity.tif is created and continue from there.
 
 1. Open QGIS Desktop.
 3. Use the Add vector data button to add the Texas.shp and Place_names.shp from the Lab 8 Data folder.
@@ -56,35 +58,40 @@ Radius (aka neighborhood) – With the Heatmap tool you can define the search ra
 
 	d. Radius = 80000
 
-	e. Click OK to run the Heatmap tool
+	e. Check Add generated file to map
+
+	f. Click OK to run the Heatmap Plugin
 
 ![Heatmap Parameters](figures/Heatmap_Parameters.png "Heatmap Parameters")
 
-7. Restyle the Texas layer with a Fill style of No brush and a thick yellow Border.  Drag the Texas layer to the top of the Table of Contents (figure below).
+7. Restyle the Texas layer with a Fill style of Transparent fill and a thick yellow border.  Drag the Texas layer to the top of the Layer panel (figure below).
 
 ![Heatmap from Place Names](figures/Heatmap_from_Place_Names.png "Heatmap from Place Names")
 
-8. Now you will run the tool again but you will weight the town points by their population. Run the Heatmap tool again. This time name the Output TownPopDensity.tif. Check the Advanced box and for the Use weight from field parameter use Population. This will create a heat map based on the population values of each town (figure below). Click OK.
+8. Now you will run the plugin again but you will weight the town points by their population. Run the Heatmap Plugin again. This time name the Output raster TownPopDensity.tif. 
+9. Check the Advanced box and check Use weight from field.
+10. Choose POPULATION as the weight field. This will create a heat map based on the population values of each town (figure below). Click OK to execute the tool.
 
-![Heatmap Parameters for a Population based Heat Map](figures/Heatmap_Parameters_for_a_Population_based_Heat_Map.png "Heatmap Parameters for a Population based Heat Map")
+![Heatmap Parameters for a Population-Based Heat Map](figures/Heatmap_Parameters_for_a_Population_based_Heat_Map.png "Heatmap Parameters for a Population-Based Heat Map")
 
-9. This method provides a much more accurate picture of where the population centers are, rather than just town density (figure below).
+9. Move the newly created heatmap above the previous heatmap in the Layers panel.
 
-![Population Based Heatmap](figures/Population_Based_Heatmap.png "Population Based Heatmap")
+Weighting the heatmap by a field provides a much more accurate picture of where the population centers are, rather than just town density (figure below).
+
+![Population-Based Heatmap](figures/Population_Based_Heatmap.png "Population-Based Heatmap")
 
 10. Save your project.
 
-
 ### Task 2 Raster to Vector Conversion
-Sometimes it is necessary to convert data between the two main data models: vector and raster. Here you will convert the population based heat map to a vector dataset. Having the data in the vector data model allows for easier area calculations and different cartographic options (border and fill).
+Sometimes it is necessary to convert data between the two main data models: vector and raster. Here you will convert the population-based heat map to a vector dataset. Having the data in the vector data model allows for easier area calculations and different cartographic options (border and fill).
 
 1. Open QGIS Desktop and open Lab 8 Data/Lab8.qgs
 
-2. Open the Layer Properties | Style tab for the TownPopDensity raster.
+2. Open the Layer Properties | Style tab for the TownPopDensity raster. Set the following parameters.
 
 	a. Render type = Singleband pseudocolor
 
-	b. Color ramp = YlOrRd
+	b. Color map = YlOrRd
 
 	c. Mode = Continuous
 
@@ -94,25 +101,25 @@ Sometimes it is necessary to convert data between the two main data models: vect
 
 	f. Click Classify
 
-	g. Click OK and close the Layer Properties.
+	g. Click OK to apply and close the Layer Properties.
 
-	h. The map will now resemble the figure below. **(NOTE:** Here the state outline has been changed to black for better contrast.)
+The map will now resemble the figure below. **(Note:** Here, the state outline has been changed to black for better contrast.)
 
-![Styled Population Based Heatmap](figures/Styled_Population_Based_Heatmap.png "Styled Population Based Heatmap")
+![Styled Population-Based Heatmap](figures/Styled_Population_Based_Heatmap.png "Styled Population-Based Heatmap")
 
-This is a more pleasing rendering and is very useful for a visual interpretation of population centers. However, if you wanted to have an actual layer of these population centers the heat map needs to be further processed. You will now identify the highest population centers.
+This is a more pleasing rendering and is very useful for a visual interpretation of population centers. However, if you wanted to have an actual layer of these population centers, the heat map needs to be further processed. You will now identify the highest population centers.
 
-3. First, you need to decide on a threshold value that will constitute the population centers. There are a couple ways to do this. You can look at the values from the layer classification. You can also look at the Layer Properties -> Histogram. Here you will use >900 as the threshold for population centers.
+3. First, you need to decide on a threshold value that will constitute the population centers. There are a couple ways to do this: You can look at the values from the layer classification. You can also look at the Layer Properties | Histogram. Here you will use values greater than 800,000 as the threshold for population centers.
 
-4. From the menu bar choose Raster-> Raster Calculator.
+4. From the menu bar choose Raster | Raster Calculator.
 
-	a. Double click on “TownPopDensity@1”
+	a. Double-click on “TownPopDensity@1”
 
 	b. Click on the > operator
 
-	c. Type 900 in as the value
+	c. Type 800000 in as the value
 
-	d. Output layer = PopulationCenter.tif
+	d. Output layer = Lab 8 Data/MyData/PopulationCenter.tif
 
 	e. Output format = GeoTIFF
 
@@ -120,10 +127,10 @@ This is a more pleasing rendering and is very useful for a visual interpretation
 
 ![Raster Calculator Parameters](figures/Raster_Calculator_Parameters.png "Raster Calculator Parameters")
 
-5. All the cells in the PopulationCenters raster input layer that had pixel values greater than 900 now have a value of 1, and the remaining pixels have a value of 0.
-6. You will now convert the output to a vector layer. From the menu bar choose Raster -> Conversion -> Polygonize (Raster to Vector).
+5. All the cells in the PopulationCenters raster input layer that had pixel values greater than 800,000 now have a value of 1, and the remaining pixels have a value of 0.
+6. You will now convert the output to a vector layer. From the menu bar choose Raster | Conversion | Polygonize (Raster to Vector).
 
-	a. Input file (raster) = PopulationCenters
+	a. Input file (raster) = PopulationCenter
 
 	b. Output file for polygons (shapefile) = MyData/PopulationCenters.shp
 
@@ -135,31 +142,35 @@ This is a more pleasing rendering and is very useful for a visual interpretation
 
 ![Raster to Vector Conversion Parameters](figures/Raster_to_Vector_Conversion_Parameters.png "Raster to Vector Conversion Parameters")
 
-7. When the processing is complete, make sure the new polygon layer is above the raster layer in the Table of Contents so that it is visible.
+7. When the processing is complete, make sure the new polygon layer is above the raster layer in the Layers panel so that it is visible.
 
 Since the output represents all the pixels in the raster you need to eliminate the non-population center polygons from this layer. To do this you will put the layer into Edit mode, select those polygons with a value of 0 and delete them. 
 
-8. Right click on the layer and choose Toggle editing from the context menu.
-9. Now open the attribute table for the layer. Click the Select features using an expression button ![expression button](figures/expression_button.png "expression button") .
-10. Expand Field and Values. Double click on DN to place it in the Expression window. Click the = operator. Now click the all unique button and double click on the 0 value to place it in the expression. (figure below) Click Select. Click Close.
+8. Right-click on the PopulationCenters polygon layer Layers panel and choose Toggle editing from the context menu.
+9. Open the attribute table for the layer. Click the Select features using an expression button ![expression button](figures/expression_button.png "expression button") .
+10. Expand Field and Values. Double-click on DN to place it in the Expression window. Click the = operator. Now click the all unique button and double-click on the 0 value to place it in the expression. (figure below)
 
 ![Select by Expression](figures/Select_by_Expression.png "Select by Expression")
 
-11. Now that the records with a value of zero are selected, and the layer is in edit mode, click the Delete selected features (DEL) ![Delete selected features button](figures/Delete_selected_features_button.png "Delete selected features button")  button. Lastly click the Toggle editing mode button and Save the changes. The population centers are now a polygon layer you can use in a final map, or perhaps to feed into another analysis (figure below).
+11. Click Select to execute the selection then click Close.
+11. Now that the records with a value of zero are selected, and the layer is in edit mode, click the Delete selected features (DEL) ![Delete selected features button](figures/Delete_selected_features_button.png "Delete selected features button") button.
+12. Lastly click the Toggle editing mode ![Toggle Editing Button](figures/Toggle_Editing_Button.png "Toggle Editing Button") button and Save the changes.
+
+The population centers are now a polygon layer you can use in a final map, or perhaps to feed into another analysis (figure below).
 
 ![Population Centers](figures/Population_Centers.png "Population Centers")
 
-Now that the data are in polygon form, it is straightforward to calculate their acreage. QGIS calculates areas in the units of the coordinate reference system, therefore the layer needs to be in a Cartesian coordinate system with units of feet or meters. Currently it is in a Geographic coordinate system with values of decimal degrees. You will save the layer to a new coordinate reference system. Then you can calculate the square meters of the polygons and convert those to acres or square miles etc. 
+Now that the data are in polygon form, it is straightforward to calculate their acreage. QGIS calculates areas in the units of the coordinate reference system, therefore the layer needs to be in a Cartesian coordinate system with units of feet or meters. Currently it is in a Geographic coordinate system with values of decimal degrees. You will save the layer to a new coordinate reference system. Then you can calculate the square meters of the polygons and convert those to acres or square miles, etc. 
 
-12. Right click on the layer and choose Save as…
+12. Right-click on the PopulationCenters polygon layer in the Layers panel and choose Save As…
 
-	a.Save the layer as PopulationCenters_albers.shp
+	a. Save the layer as PopulationCenters_albers.shp
 
-	b. CRS | click the Browse button to open the Coordinate Reference System Selector. Type ‘Texas’ into the Filter window.
+	b. Click the Select CRS button to open the Coordinate Reference System Selector. Type ‘Texas’ into the Filter window.
 
 	c. Choose the NAD/83 Texas Centric Albers Equal Area EPSG:3083 CRS. Click OK.
 
-	d. Click Add saved file to map
+	d. Check Add saved file to map
 
 	e. Click OK
 
@@ -179,7 +190,7 @@ Now that the data are in polygon form, it is straightforward to calculate their 
 
 	b. Choose Acreage as that field
 
-	c. Expand the Geometry Function list and double click $area
+	c. Expand the Geometry Function list and double-click $area
 
 	d. Click the * operator
 
@@ -191,7 +202,7 @@ Now that the data are in polygon form, it is straightforward to calculate their 
 
 18. Toggle off editing and Save your results (figure below).
 
-![Acreage_Values_Populated](figures/Acreage_Values_Populated.png "Acreage_Values_Populated")
+![Acreage Values Populated](figures/Acreage_Values_Populated.png "Acreage Values Populated")
 
 19. Now you have a layer of population centers and you have calculated their acreage!
 20. Save your project.
@@ -200,17 +211,18 @@ Now that the data are in polygon form, it is straightforward to calculate their 
 It can also be very useful to have data represented in the raster data model. Rasters are very useful for analysis. In the last lab, you saw how rasters can be combined via the Raster Calculator. You can convert points, lines and polygons to a raster format. One must be cognizant of the effects of cell size. The data will be generalized when the conversion from precise vector locations to cells occurs. Here you will convert a vector layer to raster.
 
 1. Open QGIS Desktop and open Lab 8 Data/Lab8.qgs.
-2. Add the Nueces_Roads.shp to QGIS Desktop. Right click and choose Zoom to layer extent (figure below).
+2. Add the Nueces_Roads.shp to QGIS Desktop.
+3. Right-click on the Nueces Roads layer in the Layers panel and choose Zoom to layer (figure below).
 
-![Nueces_Roads_in_QGIS_Desktop](figures/Nueces_Roads_in_QGIS_Desktop.png "Nueces_Roads_in_QGIS_Desktop")
+![Nueces Roads in QGIS Desktop](figures/Nueces_Roads_in_QGIS_Desktop.png "Nueces Roads in QGIS Desktop")
 
-3. From the menu bar choose Raster -> Conversion -> Rasterize (Vector to raster).
+3. From the menu bar choose Raster | Conversion | Rasterize (Vector to Raster).
 
 	a. Input file (shapefile) = Nueces_Roads
 
-	b. Attribute field = TLID (NOTE: this can be any numeric attribute. Often it will be a field that assigned some sort of weight to the output raster cells. Here we will simply use the TLID column.)
+	b. Attribute field = TLID (*Note*: this can be any numeric attribute. Often it will be a field that assigned some sort of weight to the output raster cells. Here we will simply use the TLID column.)
 
-	c. Output file for rasterized vectors (raster) = MyData/Roads_raster.tif (NOTE: If you get the message ‘The output file doesn’t exist. You must set up the output size or resolution to create it.’ Click OK.
+	c. Output file for rasterized vectors (raster) = MyData/Roads_raster.tif (*Note*: If you get the message ‘The output file doesn’t exist. You must set up the output size or resolution to create it.’ Click OK.)
 
 	d. Take the remaining defaults.
 
@@ -223,7 +235,8 @@ It can also be very useful to have data represented in the raster data model. Ra
 ![Output Roads Raster](figures/Output_Roads_Raster.png "Output Roads Raster")
 
 ### 3 Conclusion
-In this lab, you learned how to use the Heatmap plugin to generate point density rasters based off of  both point densities and attribute values (population). Density analyses are often used to analyze data related to crimes, or the amount of fast food stores in an area. The output provides a nice overview of how close the points are, and you can choose our own variables to weight the output. Finally, using the conversion tools we can convert between raster and vector. Having data in raster form allows you to perform raster algebra operations via the Raster Calculator. Having the data in vector form allows for geometries to be easily calculated (acreage), and for more sophisticated cartographic options (border and fill).  
+
+In this lab, you learned how to use the Heatmap Plugin to generate point density rasters based off of both point densities and attribute values (population). Density analyses are often used to analyze data related to crimes, or the amount of fast food stores in an area. The output provides a nice overview of how close the points are, and you can choose our own variables to weight the output. Finally, using the conversion tools we can convert between raster and vector. Having data in raster form allows you to perform raster algebra operations via the Raster Calculator. Having the data in vector form allows for geometries to be easily calculated (acreage), and for more sophisticated cartographic options (border and fill).  
 
 ### 4 Discussion Questions
 
@@ -233,4 +246,4 @@ In this lab, you learned how to use the Heatmap plugin to generate point density
 
 ### 5 Challenge Assignment (optional)
 
-In the Lab8/Data/Challenge folder there is a shapefile containing crime data for Surrey in the United Kingdom. There is a column for crime type (Crime_type). Use this field to generate two heatmaps: one for ‘Violent Crimes’ and one for ‘Drugs’.  You will have to select records corresponding to each crime type, and save the selected features to a new shapefile for each. The heatmaps will be generated against the resulting shapefiles. 
+In the Lab 8 Data/Challenge folder there is a shapefile containing crime data for Surrey in the United Kingdom. There is a column for crime type (Crime_type). Use this field to generate two heatmaps: one for ‘Violent Crimes’ and one for ‘Drugs’.  You will have to select records corresponding to each crime type, and save the selected features to a new shapefile for each. The heatmaps will be generated against the resulting shapefiles. 

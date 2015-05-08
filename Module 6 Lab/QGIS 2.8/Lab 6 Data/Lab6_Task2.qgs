@@ -3,13 +3,13 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_FireStations20150406212030337" name="SF_FireStations">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_FireStations20150507221228983" name="SF_FireStations">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_Police20150406212024572" name="SF_Police">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_Police20150507221313814" name="SF_Police">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_Streets20150406212033212" name="SF_Streets">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_Streets20150507221348329" name="SF_Streets">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -41,32 +41,32 @@
   <visibility-presets/>
   <layer-tree-canvas>
     <custom-order enabled="0">
-      <item>SF_Police20150406212024572</item>
-      <item>SF_FireStations20150406212030337</item>
-      <item>SF_Streets20150406212033212</item>
+      <item>SF_FireStations20150507221228983</item>
+      <item>SF_Police20150507221313814</item>
+      <item>SF_Streets20150507221348329</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SF_FireStations" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SF_FireStations20150406212030337" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SF_FireStations20150507221228983" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SF_Police" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SF_Police20150406212024572" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SF_Police20150507221313814" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SF_Streets" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SF_Streets20150406212033212" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SF_Streets20150507221348329" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
   <projectlayers layercount="3">
-    <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>SF_FireStations20150406212030337</id>
-      <datasource>D:\temp\FOSS4G\Lab 6 Data\Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_FireStations/1_point</datasource>
+    <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>SF_FireStations20150507221228983</id>
+      <datasource>Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_FireStations/1_point</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -310,10 +310,10 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -343,8 +343,8 @@
       </edittypes>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>SF_Police20150406212024572</id>
-      <datasource>D:\temp\FOSS4G\Lab 6 Data\Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_Police/1_point</datasource>
+      <id>SF_Police20150507221313814</id>
+      <datasource>Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_Police/1_point</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -588,10 +588,10 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -621,8 +621,8 @@
       </edittypes>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>SF_Streets20150406212033212</id>
-      <datasource>D:\temp\FOSS4G\Lab 6 Data\Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_Streets/1_line</datasource>
+      <id>SF_Streets20150507221348329</id>
+      <datasource>Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_Streets/1_line</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -864,10 +864,10 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -898,20 +898,41 @@
     </maplayer>
   </projectlayers>
   <properties>
-    <GRASS>
-      <WorkingLocation type="QString">Lab6_SanFrancisco</WorkingLocation>
-      <WorkingGisdbase type="QString">D:\temp\FOSS4G\Lab 6 Data\Data\GRASSdb</WorkingGisdbase>
-      <WorkingMapset type="QString">PERMANENT</WorkingMapset>
-    </GRASS>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
-      <ProjectCRSID type="int">3452</ProjectCRSID>
-      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
-    </SpatialRefSys>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WFSUrl type="QString"></WFSUrl>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WFSLayers type="QStringList"/>
+    <WMSRestrictedLayers type="QStringList"/>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSRestrictedComposers type="QStringList"/>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">D</DegreeFormat>
+    </PositionPrecision>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
     <Gui>
       <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
@@ -924,9 +945,9 @@
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>SF_Police20150406212024572</value>
-        <value>SF_FireStations20150406212030337</value>
-        <value>SF_Streets20150406212033212</value>
+        <value>SF_FireStations20150507221228983</value>
+        <value>SF_Police20150507221313814</value>
+        <value>SF_Streets20150507221348329</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>
@@ -953,12 +974,38 @@
         <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <GRASS>
+      <WorkingLocation type="QString">Lab6_SanFrancisco</WorkingLocation>
+      <WorkingGisdbase type="QString">Data\GRASSdb</WorkingGisdbase>
+      <WorkingMapset type="QString">PERMANENT</WorkingMapset>
+    </GRASS>
+    <WMSAccessConstraints type="QString"></WMSAccessConstraints>
+    <WCSLayers type="QStringList"/>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
+    </SpatialRefSys>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSFees type="QString"></WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSUrl type="QString"></WMSUrl>
   </properties>
 </qgis>

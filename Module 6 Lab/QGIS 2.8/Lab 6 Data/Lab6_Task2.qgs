@@ -1,15 +1,15 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.8.1-Wien">
+<qgis projectname="" version="2.8.2-Wien">
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::Checked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_FireStations20150507221228983" name="SF_FireStations">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_FireStations20150511212951696" name="SF_FireStations">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_Police20150507221313814" name="SF_Police">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_Police20150511213004102" name="SF_Police">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_Streets20150507221348329" name="SF_Streets">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="SF_Streets20150511213017275" name="SF_Streets">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -17,10 +17,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>542487.25594884133897722</xmin>
-      <ymin>4173151.87691979948431253</ymin>
-      <xmax>556936.87863261555321515</xmax>
-      <ymax>4185296.17268336284905672</ymax>
+      <xmin>543361.70403678552247584</xmin>
+      <ymin>4173603.53837521839886904</ymin>
+      <xmax>554452.98568473663181067</xmax>
+      <ymax>4184920.37709140311926603</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -41,32 +41,32 @@
   <visibility-presets/>
   <layer-tree-canvas>
     <custom-order enabled="0">
-      <item>SF_FireStations20150507221228983</item>
-      <item>SF_Police20150507221313814</item>
-      <item>SF_Streets20150507221348329</item>
+      <item>SF_FireStations20150511212951696</item>
+      <item>SF_Police20150511213004102</item>
+      <item>SF_Streets20150511213017275</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SF_FireStations" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SF_FireStations20150507221228983" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SF_FireStations20150511212951696" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SF_Police" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SF_Police20150507221313814" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SF_Police20150511213004102" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="SF_Streets" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="SF_Streets20150507221348329" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="SF_Streets20150511213017275" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
   <projectlayers layercount="3">
     <maplayer minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>SF_FireStations20150507221228983</id>
-      <datasource>Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_FireStations/1_point</datasource>
+      <id>SF_FireStations20150511212951696</id>
+      <datasource>Data/GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_FireStations/1_point</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -343,8 +343,8 @@
       </edittypes>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>SF_Police20150507221313814</id>
-      <datasource>Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_Police/1_point</datasource>
+      <id>SF_Police20150511213004102</id>
+      <datasource>Data/GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_Police/1_point</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -621,8 +621,8 @@
       </edittypes>
     </maplayer>
     <maplayer minimumScale="-4.65661e-10" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>SF_Streets20150507221348329</id>
-      <datasource>Data\GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_Streets/1_line</datasource>
+      <id>SF_Streets20150511213017275</id>
+      <datasource>Data/GRASSdb/Lab6_SanFrancisco/PERMANENT/SF_Streets/1_line</datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -945,9 +945,9 @@
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>SF_FireStations20150507221228983</value>
-        <value>SF_Police20150507221313814</value>
-        <value>SF_Streets20150507221348329</value>
+        <value>SF_FireStations20150511212951696</value>
+        <value>SF_Police20150511213004102</value>
+        <value>SF_Streets20150511213017275</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>
@@ -982,7 +982,7 @@
     </Macros>
     <GRASS>
       <WorkingLocation type="QString">Lab6_SanFrancisco</WorkingLocation>
-      <WorkingGisdbase type="QString">Data\GRASSdb</WorkingGisdbase>
+      <WorkingGisdbase type="QString">Data/GRASSdb</WorkingGisdbase>
       <WorkingMapset type="QString">PERMANENT</WorkingMapset>
     </GRASS>
     <WMSAccessConstraints type="QString"></WMSAccessConstraints>
